@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProgrammingConcept</name>
+    </assembly>
+    <members>
+        <member name="T:ProgrammingConcept.Parse">
+            <summary>
+				Convert string to any data type without throwing an exception.
+				All the methods inside this class are using TryParse method to convert the data.
+				You can provide a fallback value if parsing is failed.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToBool(System.String,System.Boolean)">
+            <summary>
+				Convert string to true or false without throwing exception.
+			</summary><param name="data">String that need to convert into boolean.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return boolean value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToBool(System.Collections.Generic.List{System.String},System.Boolean)">
+            <summary>
+				Convert string to true or false without throwing exception.
+			</summary><param name="data">String that need to convert into boolean.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return boolean value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToBool(System.String[],System.Boolean)">
+            <summary>
+				Convert string to true or false without throwing exception.
+			</summary><param name="data">String that need to convert into boolean.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return boolean value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToDouble(System.String,System.Double)">
+            <summary>
+				Convert string to double without throwing exception.
+			</summary><param name="data">String that need to convert into double.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return double value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToDouble(System.Collections.Generic.List{System.String},System.Double)">
+            <summary>
+				Convert string to double without throwing exception.
+			</summary><param name="data">String that need to convert into double.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return double value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToDouble(System.String[],System.Double)">
+            <summary>
+				Convert string to double without throwing exception.
+			</summary><param name="data">String that need to convert into double.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return double value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToFloat(System.String,System.Single)">
+            <summary>
+				Convert string to float without throwing exception.
+			</summary><param name="data">String that need to convert into float.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return float value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToFloat(System.Collections.Generic.List{System.String},System.Single)">
+            <summary>
+				Convert string to float without throwing exception.
+			</summary><param name="data">String that need to convert into float.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return float value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToFloat(System.String[],System.Single)">
+            <summary>
+				Convert string to float without throwing exception.
+			</summary><param name="data">String that need to convert into float.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return float value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToInt(System.String,System.Int32)">
+            <summary>
+				Convert string to integer value without throwing exception.
+			</summary><param name="data">String that need to convert into integer value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return integer value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToInt(System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+				Convert string to integer value without throwing exception.
+			</summary><param name="data">String that need to convert into integer value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return integer value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToInt(System.String[],System.Int32)">
+            <summary>
+				Convert string to integer value without throwing exception.
+			</summary><param name="data">String that need to convert into integer value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return integer value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToLong(System.String,System.Int64)">
+            <summary>
+				Convert string to long value without throwing exception.
+			</summary><param name="data">String that need to convert into long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToLong(System.Collections.Generic.List{System.String},System.Int64)">
+            <summary>
+				Convert string to long value without throwing exception.
+			</summary><param name="data">String that need to convert into long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToLong(System.String[],System.Int64)">
+            <summary>
+				Convert string to long value without throwing exception.
+			</summary><param name="data">String that need to convert into long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToShort(System.String,System.Int16)">
+            <summary>
+				Convert string to short value without throwing exception.
+			</summary><param name="data">String that need to convert into short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToShort(System.Collections.Generic.List{System.String},System.Int16)">
+            <summary>
+				Convert string to short value without throwing exception.
+			</summary><param name="data">String that need to convert into short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToShort(System.String[],System.Int16)">
+            <summary>
+				Convert string to short value without throwing exception.
+			</summary><param name="data">String that need to convert into short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUint(System.String,System.UInt32)">
+            <summary>
+				Convert string to unsigned interger value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned interger value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned interger value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUint(System.Collections.Generic.List{System.String},System.UInt32)">
+            <summary>
+				Convert string to unsigned interger value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned interger value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned interger value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUint(System.String[],System.UInt32)">
+            <summary>
+				Convert string to unsigned interger value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned interger value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned interger value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUlong(System.String,System.UInt64)">
+            <summary>
+				Convert string to unsigned long value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUlong(System.Collections.Generic.List{System.String},System.UInt64)">
+            <summary>
+				Convert string to unsigned long value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUlong(System.String[],System.UInt64)">
+            <summary>
+				Convert string to unsigned long value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned long value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned long value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUshort(System.String,System.UInt16)">
+            <summary>
+				Convert string to unsigned short value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUshort(System.Collections.Generic.List{System.String},System.UInt16)">
+            <summary>
+				Convert string to unsigned short value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToUshort(System.String[],System.UInt16)">
+            <summary>
+				Convert string to unsigned short value without throwing exception.
+			</summary><param name="data">String that need to convert into unsigned short value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return unsigned short value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToByte(System.String,System.Byte)">
+            <summary>
+				Convert string to byte value without throwing exception.
+			</summary><param name="data">String that need to convert into byte value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return byte value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToByte(System.Collections.Generic.List{System.String},System.Byte)">
+            <summary>
+				Convert string to byte value without throwing exception.
+			</summary><param name="data">String that need to convert into byte value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return byte value after conversion.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Parse.ToByte(System.String[],System.Byte)">
+            <summary>
+				Convert string to byte value without throwing exception.
+			</summary><param name="data">String that need to convert into byte value.</param><param name="defaultValue">Return this value if parsing is failed.</param><returns>Return byte value after conversion.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.StackedEvent">
+            <summary>
+				Events that register in a stack form. It is useful when the UI elements are stacked on top of each other. Then the back button is pressed and closing UI elements method is invoked from top to the bottom.
+			</summary>
+        </member>
+        <member name="E:ProgrammingConcept.StackedEvent.onZeroStackedEvent">
+            <summary>
+				Event that will be invoked when there are no more event that can be invoked in the event list (<c>stackedEventList</c>).
+			</summary>
+        </member>
+        <member name="F:ProgrammingConcept.StackedEvent.freeze">
+            <summary>
+				When set to true. all the codes in all methods in this class wull not be implemented. Default value is false.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.PushEvent(System.Action)">
+            <summary>
+				Add an event on the top of the event list (<c>stackedEventList</c>).
+			</summary><param name="action">
+				Event that needs to add on the top of the event list (<c>stackedEventList</c>).
+			</param>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.PopTopEvent(System.Boolean)">
+            <summary>
+				Remove the event on the top of the event list (<c>stackedEventList</c>).
+			</summary><param name="invokeAction">
+				After the event has removed from the event list (<c>stackedEventList</c>), the removed event needs to be executed or not.
+			</param>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.PopOneEvent(System.Action,System.Boolean)">
+            <summary>
+				Remove a specific event. The event can be at the top, bottom or middle in the event list (<c>stackedEventList</c>). If it is the <c>onZeroStackedEvent</c> event, it will be executed, depend on given arguement in <paramref name="invokeAction" />. The event in <c>onZeroStackedEvent</c> will not be removed.\nReturn -1 if the specific is not found.\nReturn 0 if the <c>StackedEvent</c> is freeze.\nReturn 1 if this function is successfully executed.
+			</summary><param name="action">
+				Event that needs to be removed from the event list (<c>stackedEventList</c>).
+			</param><param name="invokeAction">
+				After the event has removed from the event list (<c>stackedEventList</c>), the removed event needs to be executed or not.
+			</param><returns>
+				Return -1 if the specific is not found.\nReturn 0 if the <c>StackedEvent</c> is freeze.\nReturn 1 if this function is successfully executed.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.PopFromTopEvent(System.Action)">
+            <summary>
+				Remove all the events from the top until the specific event.\nIf parameter <paramref name="involeAction" /> is specified. The specific event will be removed too. Else, the specific event will not be removed from the event list (<c>stackedEventList</c>).\nIf specific event is not found, no event will be removed.
+			</summary><param name="action">
+				Event that needs to be removed from the event list (<c>stackedEventList</c>).
+			</param><param name="invokeAction">
+				After the event has removed from the event list (<c>stackedEventList</c>), the removed event needs to be executed or not.
+			</param>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.PopFromTopEvent(System.Action,System.Boolean)">
+            <summary>
+				Remove all the events from the top until the specific event.\nIf parameter <paramref name="involeAction" /> is specified. The specific event will be removed too. Else, the specific event will not be removed from the event list (<c>stackedEventList</c>).\nIf specific event is not found, no event will be removed.
+			</summary><param name="action">
+				Event that needs to be removed from the event list (<c>stackedEventList</c>).
+			</param><param name="invokeAction">
+				After the event has removed from the event list (<c>stackedEventList</c>), the removed event needs to be executed or not.
+			</param>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.ClearBackEventList">
+            <summary>
+				Remove all the events in the event list (<c>stackedEventList</c>).
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.StackedEvent.ClearAllEvent">
+            <summary>
+				Remove all the events in the event list (<c>stackedEventList</c>) and the event in <c>onZeroStackedEvent</c>.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.Logic">
+            <summary>
+				Comparison between two boolean and return true or false.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.AND(System.Boolean[])">
+            <summary>
+				Return true if all inputs are true.
+			</summary><param name="inputs">Inputs in boolean.</param><returns>Return true if all inputs are true.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.OR(System.Boolean[])">
+            <summary>
+				Return true if any input or all inputs are true.
+			</summary><param name="inputs">Inputs in boolean.</param><returns>Return true if any input or all inputs are true.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.XOR(System.Boolean,System.Boolean)">
+            <summary>
+				Return true if <C>inputA</C> not equal to <C>inputB</C>.
+			</summary><param name="inputA">First boolean.</param><param name="inputB">Second boolean.</param><returns>
+				Return true if <C>inputA</C> not equal to <C>inputB</C>.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.NOT(System.Boolean)">
+            <summary>
+				Return true if <C>inputA</C> is false. Return false if <C>inputA</C> is true.
+			</summary><param name="inputA">First boolean.</param><returns>
+				Return true if <C>inputA</C> is false. Return false if <C>inputA</C> is true.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.NAND(System.Boolean,System.Boolean)">
+            <summary>
+				Return false if <C>inputA</C> and <C>inputB</C> are true.
+			</summary><param name="inputA">First boolean.</param><param name="inputB">Second boolean.</param><returns>
+				Return false if <C>inputA</C> and <C>inputB</C> are true.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.NOR(System.Boolean,System.Boolean)">
+            <summary>
+				Return true if <C>inputA</C> and <C>inputB</C> are false.
+			</summary><param name="inputA">First boolean.</param><param name="inputB">Second boolean.</param><returns>
+				Return true if <C>inputA</C> and <C>inputB</C> are false.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Logic.XNOR(System.Boolean,System.Boolean)">
+            <summary>
+				Return true if <C>inputA</C> equal to <C>inputB</C>.
+			</summary><param name="inputA">First boolean.</param><param name="inputB">Second boolean.</param><returns>
+				Return true if <C>inputA</C> equal to <C>inputB</C>.
+			</returns>
+        </member>
+        <member name="T:ProgrammingConcept.HtmlColourTag">
+            <!-- No matching elements were found for the following include tag --><include file="ProgrammingConcept.xml" path="docs/members[@name='Colourtag']/Colourtag/*" />
+        </member>
+        <member name="M:ProgrammingConcept.HtmlColourTag.ColourText(System.String,UnityEngine.Color,System.Boolean)">
+            <!-- No matching elements were found for the following include tag --><include file="ProgrammingConcept.xml" path="docs/members[@name='Colourtag']/ColourText/*" />
+        </member>
+        <member name="M:ProgrammingConcept.HtmlColourTag.ColourText(System.String,System.Single,System.Single,System.Single)">
+            <!-- No matching elements were found for the following include tag --><include file="ProgrammingConcept.xml" path="docs/members[@name='Colourtag']/ColourText/*" />
+        </member>
+        <member name="M:ProgrammingConcept.HtmlColourTag.ColourText(System.String,System.Single,System.Single,System.Single,System.Single)">
+            <!-- No matching elements were found for the following include tag --><include file="ProgrammingConcept.xml" path="docs/members[@name='Colourtag']/ColourText/*" />
+        </member>
+        <member name="M:ProgrammingConcept.HtmlColourTag.ColourText(System.String,System.String)">
+            <!-- No matching elements were found for the following include tag --><include file="ProgrammingConcept.xml" path="docs/members[@name='Colourtag']/ColourText/*" />
+        </member>
+        <member name="T:ProgrammingConcept.ColourHSV">
+            <summary>
+				Colour in hSV format.
+			</summary>
+        </member>
+        <member name="F:ProgrammingConcept.ColourHSV.hue">
+            <summary>
+				Hue in HSV colour format.
+			</summary>
+        </member>
+        <member name="F:ProgrammingConcept.ColourHSV.saturation">
+            <summary>
+				Saturation in HSV colour format.
+			</summary>
+        </member>
+        <member name="F:ProgrammingConcept.ColourHSV.value">
+            <summary>
+				Value in HSV colour format.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.ColourConverter">
+            <summary>
+				Convert colour format between different colour space.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.ColourConverter.ComvertRgbToHsv(UnityEngine.Color)">
+            <summary>
+				Convert from RGB colour into HSV colour.
+			</summary><param name="rgb">RGB colour. All colours value must be in between 0 to 1.</param><param name="red">Red colour. The colours value must be in between 0 to 1.</param><param name="green">Green colour. The colours value must be in between 0 to 1.</param><param name="blue">Blue colour. The colours value must be in between 0 to 1.</param><returns>
+				Return HSV colour. The value for hue is in between 0 to 360. The value for saturation and value is in between 0 to 1."/&gt;.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.ColourConverter.ComvertRgbToHsv(System.Single,System.Single,System.Single)">
+            <summary>
+				Convert from RGB colour into HSV colour.
+			</summary><param name="rgb">RGB colour. All colours value must be in between 0 to 1.</param><param name="red">Red colour. The colours value must be in between 0 to 1.</param><param name="green">Green colour. The colours value must be in between 0 to 1.</param><param name="blue">Blue colour. The colours value must be in between 0 to 1.</param><returns>
+				Return HSV colour. The value for hue is in between 0 to 360. The value for saturation and value is in between 0 to 1."/&gt;.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.ColourConverter.ComvertHsvToRgb(ProgrammingConcept.ColourHSV)">
+            <summary>
+				Convert from HSV colour into RGB colour.
+			</summary><param name="hsv">HSV colour. The value for hue must be in between 0 to 360. The value for saturation and value must be in between 0 to 1.</param><param name="hue">Hue. The value must be in between 0 to 360.</param><param name="saturation">Saturation. The value must be in between 0 to 1.</param><param name="value">Value. The value must be in between 0 to 1.</param><returns>
+				Return RGB colour. The value for all colours are in between 0 to 1."/&gt;.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.ColourConverter.ComvertHsvToRgb(System.Single,System.Single,System.Single)">
+            <summary>
+				Convert from HSV colour into RGB colour.
+			</summary><param name="hsv">HSV colour. The value for hue must be in between 0 to 360. The value for saturation and value must be in between 0 to 1.</param><param name="hue">Hue. The value must be in between 0 to 360.</param><param name="saturation">Saturation. The value must be in between 0 to 1.</param><param name="value">Value. The value must be in between 0 to 1.</param><returns>
+				Return RGB colour. The value for all colours are in between 0 to 1."/&gt;.
+			</returns>
+        </member>
+        <member name="T:ProgrammingConcept.SaveLoad">
+            <summary>
+				Save and load file.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.SaveLoad.Save``1(System.String,System.Boolean,``0)">
+            <summary>
+				Save data into provided path.
+			</summary><param name="path">The full path of the file.</param><param name="checkDirectory">Check if folder exist. If set to false, make sure the folder directory is exist.</param><param name="data">Data taht need to be saved.</param>
+        </member>
+        <member name="M:ProgrammingConcept.SaveLoad.Load``1(System.String)">
+            <summary>
+				Load data from provided path.
+			</summary><param name="path">The full path of the file.</param><returns>Return the data that has been loaded.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.TransformHelper">
+            <summary>
+				Additional calculation involve position, rotation and scale.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.TransformHelper.GetAngleTowardTarget(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2@,System.Boolean)">
+            <summary>
+				Calculate angle from source position toward target position.
+			</summary><param name="sourcePosition">Position of source object.</param><param name="targetPosition">Position of target object.</param><param name="distance">Return distance from target position to source position.</param><param name="angleInDegree">Angle in degree. Set to false to return angle in radian.</param><returns>Return angle from source position toward target position.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.TransformHelper.LookAt(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+				Make object's z-axis (forward direction) facing a target.
+			</summary><param name="source">The source object position</param><param name="target">The target object position</param><returns>Return the rotation of the source object</returns>
+        </member>
+        <member name="M:ProgrammingConcept.TransformHelper.TranslateInWorldSpace(System.Single,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Animations.Axis)">
+            <summary>
+				Move object in world space through object local axis.
+			</summary><param name="speed">The speed of the object.</param><param name="position">The transform.position of the object.</param><param name="rotation">The transform.rotation of the object.</param><param name="axis">The movement in object local axis.</param><returns>Return the updated position of the object.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.TimeBasedEnergy">
+            <summary>
+				Calculate how many energy can recover after passes a period of time.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.TimeBasedEnergy.GetAmountOfEnergyRecoverCooldownHasPassed(System.DateTime,System.Int32,System.DateTime@)">
+            <summary>
+				Calculate how many times the energy cooldown has passed after a period of time.
+			</summary><param name="lastRecoverTime">The previous energy recover time.</param><param name="energyCooldown">The time interval before next energy recover.</param><param name="newRecoverTime">The latest energy recover time.</param><returns>Return the amount of energy cooldown has fully passed.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.TimeBasedEnergy.GetTotlaEnergyRecover(System.DateTime,System.Int32,System.Int32,System.DateTime@)">
+            <summary>
+				Calculate how many times the energy cooldown has passed after a period of time.
+				It's same as <c>TimeBasedEbergy.GetAmountOfEnergyRecoverCooldownHasPassed * energyRecoverPoint</c>.
+			</summary><param name="lastRecoverTime">The previous energy recover time.</param><param name="energyCooldown">The time interval before next energy recover.</param><param name="energyRecoverPoint">The amount of energy recover after cooldown. Use negative value for energy spend. If this value is 1, just use <c>TimeBasedEbergy.GetAmountOfEnergyRecoverCooldownHasPassed</c> function.</param><param name="newRecoverTime">The latest energy recover time.</param><returns>Return the total energy has recovered.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.TimeBasedEnergy.GetEnergyRemain(System.DateTime,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTime@)">
+            <summary>
+				Calculate how many current energy remain after a period of time.
+			</summary><param name="lastRecoverTime">The previous energy recover time.</param><param name="energyCooldown">The time interval before next energy recover.</param><param name="energyRecoverPoint">The amount of energy recover after cooldown. Use negative value for energy spend. If this value is 1, just use <c>TimeBasedEbergy.GetAmountOfEnergyRecoverCooldownHasPassed</c> function.</param><param name="currentEnergy">Current energy value.</param><param name="maxEnergyCapacity">Maximun energy value.</param><param name="newRecoverTime">The latest energy recover time.</param><returns>Return the updated current energy value.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.CameraRender">
+            <summary>
+				Render a camera view and turn into sprite, texture 2D or render texture. If the UI needs to be included, make sure the
+				Render Mode field in Canvas component has set to Screen Space - Camera or World Space. If Screen Space - Camera is selected,
+				assign the camera that needs to perform the rendering into Render Camera field.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.CameraRender.RenderCameraViewToRenderTexture(UnityEngine.Camera,System.Int32,System.Int32,System.Int32)">
+            <summary>
+				Render a camera view and turn into render texture. Note that the render texture is an instance and require to release it
+				manually when not in use anymore using <code>RenderTexture.Release</code> function.
+			</summary><param name="renderCamera">The camera which use to render the view.</param><param name="width">The width of the render texture.</param><param name="height">The height of the render texture.</param><param name="depth">The depth of the render texture.</param><returns>Return the render texture instance.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.CameraRender.RenderCameraViewToTexture2D(UnityEngine.Camera,System.Int32,System.Int32,System.Int32,UnityEngine.TextureFormat)">
+            <summary>
+				Render a camera view and turn into texture 2D. Note that the texture 2D is an instance and require to destroy it
+				manually when not in use anymore.
+			</summary><param name="renderCamera">The camera which use to render the view.</param><param name="width">The width of the texture 2D.</param><param name="height">The height of the texture 2D.</param><param name="depth">The depth of the texture 2D.</param><param name="format">The colour format of the render texture.</param><returns>Return the texture 2D instance.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.CameraRender.RenderCameraViewToSprite(UnityEngine.Camera,System.Int32,System.Int32,System.Int32,UnityEngine.TextureFormat,UnityEngine.Vector2)">
+            <summary>
+				Render a camera view and turn into sprite. Note that the texture 2D and sprite are an instance and require to destroy it
+				manually when not in use anymore.
+			</summary><param name="renderCamera">The camera which use to render the view.</param><param name="width">The width of the sprite.</param><param name="height">The height of the sprite.</param><param name="depth">The depth of the sprite.</param><param name="format">The colour format of the sprite.</param><param name="pivot">The pivot of the sprite.</param><returns>Return the sprite instance.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.Mod.ModAsset">
+            <summary>
+				Library use to load external assets.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadAssetBundle``1(System.String,System.Action{System.Collections.Generic.List{``0}})">
+            <summary>
+				Load an asset bundle from given path.
+				If file not exist, a FileNotFoundException will be thrown.
+			</summary><param name="path">The path of the asset bundle.</param><param name="loadedCallback">This event is called when asset bundle has loaded complete. If there are multiple components in the asset bundle need to read, use a scriptable object script to assign all components inside and replace generic parameter with that scriptable object class.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadTextUsingFileStream(System.String)">
+            <summary>
+				Load a text asset from given path. It cannot read asset from StreamingAssets folder in Android. Use UnityWebRequest class instead.
+				If file not exist, a FileNotFoundException will be thrown.
+			</summary><param name="path">The path of the text asset.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadBytesUsingFileStream(System.String)">
+            <summary>
+				Load all bytes from a file given by path. It cannot read asset from StreamingAssets folder in Android. Use UnityWebRequest class instead.
+				If file not exist, a FileNotFoundException will be thrown.
+			</summary><param name="path">The path of the text asset.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadSpriteUsingFileStream(System.String)">
+            <summary>
+				Load a sprite asset from given path. It cannot read asset from StreamingAssets folder in Android. Use UnityWebRequest class instead.
+				If file not exist, a FileNotFoundException will be thrown.
+			</summary><param name="path">The path of the sprite asset.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadTextUsingWebRequest(System.String)">
+            <summary>
+				Load a text asset from given path using UnityWebRequest. It uses to read asset from StreamingAssets folder in Android.
+				If file not exist, it returns an empty string.
+			</summary><param name="path">The path of the text asset.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadBytesUsingWebRequest(System.String)">
+            <summary>
+				Load all bytes from a file given by path using UnityWebRequest. It uses to read asset from StreamingAssets folder in Android.
+				If file not exist, it returns an empty array.
+			</summary><param name="path">The path of the text asset.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Mod.ModAsset.LoadSpriteUsingWebRequest(System.String)">
+            <summary>
+				Load a sprite asset from given path using UnityWebRequest. It uses to read asset from StreamingAssets folder in Android.
+				If file not exist, a returns null.
+			</summary><param name="path">The path of the sprite asset.</param>
+        </member>
+        <member name="T:ProgrammingConcept.Module.JiuGongGe`1">
+            <summary>
+				Create a 9 tiles that arrange into 3 row x 3 column grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.upperLeft">
+            <summary>
+				The first row and first column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.upperMiddle">
+            <summary>
+				The first row and second column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.upperRight">
+            <summary>
+				The first row and third column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.middleLeft">
+            <summary>
+				The second row and first column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.center">
+            <summary>
+				The second row and second column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.middleRight">
+            <summary>
+				The second row and third column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.lowerLeft">
+            <summary>
+				The third row and first column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.lowerMiddle">
+            <summary>
+				The third row and second column tile in the grid.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Module.JiuGongGe`1.lowerRight">
+            <summary>
+				The third row and third column tile in the grid.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.#ctor">
+            <summary>
+				Create a 9 tiles that arrange into 3 row x 3 column grid.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.ShiftLeft">
+            <summary>
+				Move and replace the tiles 1 column from right side to left side. All third column tiles will have value of <c>null</c>.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.ShiftRight">
+            <summary>
+				Move and replace the tiles 1 column from left side to right side. All first column tiles will have value of <c>null</c>.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.ShiftDown">
+            <summary>
+				Move and replace the tiles 1 column from upper side to lower side. All first row tiles will have value of <c>null</c>.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.ShiftUp">
+            <summary>
+				Move and replace the tiles 1 column from lower side to upper side. All third row tiles will have value of <c>null</c>.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Module.JiuGongGe`1.Copy(ProgrammingConcept.Module.JiuGongGe{`0})">
+            <summary>
+				Create a copy of grid from source.
+			</summary><param name="source">The source data of the grid.</param><returns>Return a copy of the grid data.</returns>
+        </member>
+        <member name="T:ProgrammingConcept.Optimization.Singleton`1">
+            <summary>
+				Make the class unique and only one can be exist through all scenes.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Optimization.Singleton`1.Instance">
+            <summary>
+				The unique reference of the class.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Optimization.Singleton`1.Initialize">
+            <summary>
+				It calls after setup completed in <C>Awake</C> function.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.Optimization.ObjectPooling`1">
+            <summary>
+				This class allows user to store a list of objects into an active list and an inactive list
+				so that these objects can be recycle and reuse later instead of using Instantiate and Destroy function.
+			</summary><param name="createFunction">Function call that create the game objects in a scene.</param><param name="initialCreateLoop">The amount of <c>createFunction</c> call at the begining.</param>
+        </member>
+        <member name="P:ProgrammingConcept.Optimization.ObjectPooling`1.activeList">
+            <summary>
+				Objects that are active in the scene.
+			</summary>
+        </member>
+        <member name="P:ProgrammingConcept.Optimization.ObjectPooling`1.inactiveList">
+            <summary>
+				Objects that are not active in the scene.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.Optimization.ObjectPooling`1.#ctor(System.Func{`0[]},System.Int32)">
+            <summary>
+				This class allows user to store a list of objects into an active list and an inactive list
+				so that these objects can be recycle and reuse later instead of using Instantiate and Destroy function.
+			</summary><param name="createFunction">Function call that create the game objects in a scene.</param><param name="initialCreateLoop">The amount of <c>createFunction</c> call at the begining.</param>
+        </member>
+        <member name="M:ProgrammingConcept.Optimization.ObjectPooling`1.GetAnActiveItem">
+            <summary>
+				Get an object in the inactive list. 
+				**IMPORTANT** The <C>gameObject.Setactive(bool)</C> has to manually set.
+			</summary><returns>Return an object from inactive list.</returns>
+        </member>
+        <member name="M:ProgrammingConcept.Optimization.ObjectPooling`1.SetAnItemToInactive(`0)">
+            <summary>
+				Assign an object into inactive list. 
+				**IMPORTANT** The <C>gameObject.Setactive(bool)</C> has to manually set.
+			</summary><param name="item">The object that need to assign into inactive list..</param>
+        </member>
+        <member name="M:ProgrammingConcept.Optimization.ObjectPooling`1.SetAllItemToInactive">
+            <summary>
+				Set all active object into inactive list.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.RandomChance.RandomGenerator">
+            <summary>
+				Return a random data based on a given set of data or value.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetName(System.Collections.Generic.List{System.String})">
+            <summary>
+				Generate a random name in the given name list.
+			</summary><param name="nameList">String that contain a number of names.</param><returns>
+				Return empty string if there are no value inside <paramref name="nameList" />.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetName(System.String[])">
+            <summary>
+				Generate a random name in the given name list.
+			</summary><param name="nameList">String that contain a number of names.</param><returns>
+				Return empty string if there are no value inside <paramref name="nameList" />.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetNames(System.Collections.Generic.List{System.String},System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random name in the given name list.
+			</summary><param name="nameList">String that contain a number of names.</param><param name="amount">Number of random names will be generated.</param><param name="repeat">Generated name can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="nameList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetNames(System.String[],System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random name in the given name list.
+			</summary><param name="nameList">String that contain a number of names.</param><param name="amount">Number of random names will be generated.</param><param name="repeat">Generated name can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="nameList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetNamesFromTxtFile(System.String,System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random name from a given txt file. In the txt file, each name must seperate with newline.
+			</summary><param name="path">The full directory and the file name with extension.</param><param name="amount">Number of random names will be generated.</param><param name="repeat">Generated name can be repeated?</param><returns>
+				Return null if <paramref name="path" /> does not exist, or txt file does not have any content, or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetIntegers(System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random name in the given integer list.
+			</summary><param name="integerList">List of integer for picking.</param><param name="amount">Number of random integer will be generated.</param><param name="repeat">Generated integer can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="integerList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetIntegers(System.Int32[],System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random name in the given integer list.
+			</summary><param name="integerList">List of integer for picking.</param><param name="amount">Number of random integer will be generated.</param><param name="repeat">Generated integer can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="integerList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetIntegersFromTxtFile(System.String,System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random integer from a given txt file. In the txt file, each integer must seperate with newline.
+			</summary><param name="path">The full directory and the file name with extension.</param><param name="amount">Number of random integer will be generated.</param><param name="repeat">Generated integer can be repeated?</param><returns>
+				Return null if <paramref name="path" /> does not exist, or txt file does not have any content, or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetFloats(System.Collections.Generic.List{System.Single},System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random float number from the given float list.
+			</summary><param name="floatList">List of float number for picking.</param><param name="amount">Number of random float number will be generated.</param><param name="repeat">Generated float number can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="floatList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetFloats(System.Single[],System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random float number from the given float list.
+			</summary><param name="floatList">List of float number for picking.</param><param name="amount">Number of random float number will be generated.</param><param name="repeat">Generated float number can be repeated?</param><returns>
+				Return null if there are no value inside <paramref name="floatList" /> or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.RandomGenerator.GetFloatsFromTxtFile(System.String,System.Int32,System.Boolean)">
+            <summary>
+				Generate a list of random float number from a given txt file. In the txt file, each float number must seperate with newline.
+			</summary><param name="path">The full directory and the file name with extension.</param><param name="amount">Number of random float number will be generated.</param><param name="repeat">Generated float number can be repeated?</param><returns>
+				Return null if <paramref name="path" /> does not exist, or txt file does not have any content, or <paramref name="amount" /> is 0.
+			</returns>
+        </member>
+        <member name="T:ProgrammingConcept.RandomChance.PollChance">
+            <summary>
+				Get a random data based on the poll amount in a list of poll data.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.RandomChance.PollChance.PollData`1">
+            <summary>
+				This is a raw poll number for each data. You need to put this poll data in a list.
+			</summary>
+        </member>
+        <member name="T:ProgrammingConcept.RandomChance.PollChance.PollAccumulateData`1">
+            <summary>
+				This is a accumulate poll number for each data. Use <c>PollChance.GeneratePollAccumulateData</c> function to generate this list,
+				and put this list into <c>PollChance.GetRandomDataFromPollAccumulateData</c> function to get a random data from the list.
+			</summary>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.PollChance.Combine``1(System.Collections.Generic.List{ProgrammingConcept.RandomChance.PollChance.PollData{``0}},System.Collections.Generic.List{ProgrammingConcept.RandomChance.PollChance.PollData{``0}})">
+            <summary>
+				Combine two <c>PollData</c> lists into one.
+			</summary><param name="list1">The source list.</param><param name="list2">The additional list.</param><returns>
+				Return combined <c>PollData</c> list.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.PollChance.GeneratePollAccumulateData``1(System.Collections.Generic.List{ProgrammingConcept.RandomChance.PollChance.PollData{``0}})">
+            <summary>
+				Generate <c>PollAccumulateData</c> list from <c>PollData</c> list.
+			</summary><param name="pollData">Raw poll number for each data in a list.</param><returns>
+				Return accumulate poll number foe each data in a list. Use in <c>PollChance.GetRandomDataFromPollAccumulateData</c> function.
+			</returns>
+        </member>
+        <member name="M:ProgrammingConcept.RandomChance.PollChance.GetRandomDataFromPollAccumulateData``1(System.Collections.Generic.List{ProgrammingConcept.RandomChance.PollChance.PollAccumulateData{``0}})">
+            <summary>
+				Get a random data from a accumulate poll data list.
+			</summary><param name="accumulateData">Accumulate poll number for each data in a list.</param><returns>
+				Return a random data from a accumulate poll data list.
+			</returns>
+        </member>
+    </members>
+</doc>
