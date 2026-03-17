@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1619817591014095886}
   - component: {fileID: 8897530980198383959}
   m_Layer: 5
-  m_Name: delete_confirm_background_id
+  m_Name: restore_confirm_background_id
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,7 +349,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4390485664262896983}
   - component: {fileID: 4285679893370622955}
-  - component: {fileID: 836314826304291286}
+  - component: {fileID: 8328672510360449518}
   m_Layer: 5
   m_Name: yes_button_background_id
   m_TagString: Untagged
@@ -386,7 +386,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491610925859354499}
   m_CullTransparentMesh: 1
---- !u!114 &836314826304291286
+--- !u!114 &8328672510360449518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 6741260549944024423}
   - component: {fileID: 8329315702839780047}
   m_Layer: 5
-  m_Name: delete_confirm_message
+  m_Name: restore_confirm_message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2176926955754294626}
   - component: {fileID: 5122521999689035387}
-  - component: {fileID: 7970376357915095320}
+  - component: {fileID: 264304681351040283}
   m_Layer: 5
   m_Name: backup_save_button_background_id
   m_TagString: Untagged
@@ -676,7 +676,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711755637071119085}
   m_CullTransparentMesh: 1
---- !u!114 &7970376357915095320
+--- !u!114 &264304681351040283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -853,7 +853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4241394055267992863}
   - component: {fileID: 7206248932926822733}
-  - component: {fileID: 2132069286385539145}
+  - component: {fileID: 1174952263464353299}
   m_Layer: 5
   m_Name: no_button_background_id
   m_TagString: Untagged
@@ -890,7 +890,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766107689254937583}
   m_CullTransparentMesh: 1
---- !u!114 &2132069286385539145
+--- !u!114 &1174952263464353299
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1285,7 +1285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6558977885511588964}
   - component: {fileID: 7372764397122471065}
-  - component: {fileID: 5796197895887891425}
+  - component: {fileID: 2857827870418732213}
   m_Layer: 5
   m_Name: restore_button_background_id
   m_TagString: Untagged
@@ -1322,7 +1322,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591860399930514400}
   m_CullTransparentMesh: 1
---- !u!114 &5796197895887891425
+--- !u!114 &2857827870418732213
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2304,7 +2304,7 @@ GameObject:
   - component: {fileID: 2328052184604996509}
   - component: {fileID: 8469202507535353028}
   m_Layer: 5
-  m_Name: delete_confirm_backup_save_name
+  m_Name: restore_confirm_backup_save_name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2366,8 +2366,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4291616255
-  m_fontColor: {r: 1, g: 0.8666667, b: 0.8, a: 1}
+    rgba: 4293328844
+  m_fontColor: {r: 0.8, g: 1, b: 0.9032258, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2576,7 +2576,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7138240544007614413}
   m_Layer: 5
-  m_Name: PAN62_Delete Save Setting
+  m_Name: PAN61_Setting Restore Save
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2897,7 +2897,7 @@ GameObject:
   - component: {fileID: 6195798240874210359}
   - component: {fileID: 5310371768207465148}
   m_Layer: 5
-  m_Name: delete_confirm_attention
+  m_Name: restore_confirm_attention
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3070,7 +3070,7 @@ GameObject:
   - component: {fileID: 2476129167599892627}
   - component: {fileID: 7048408775774669612}
   m_Layer: 5
-  m_Name: delete_confirm_backup_save_date
+  m_Name: restore_confirm_backup_save_date
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3132,8 +3132,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4289574860
-  m_fontColor: {r: 0.8, g: 0.71895427, b: 0.6784314, a: 1}
+    rgba: 4290628781
+  m_fontColor: {r: 0.68, g: 0.8, b: 0.7411765, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3207,7 +3207,7 @@ GameObject:
   - component: {fileID: 760882390618129387}
   - component: {fileID: 9025907222150294005}
   m_Layer: 5
-  m_Name: delete_confirm_attention_icon_id
+  m_Name: restore_confirm_attention_icon_id
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3617,7 +3617,7 @@ GameObject:
   - component: {fileID: 4597737585819995526}
   - component: {fileID: 8401331766814083036}
   m_Layer: 5
-  m_Name: delete_confirm_midground_id
+  m_Name: restore_confirm_midground_id
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4425,9 +4425,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1072555929961330575}
   - component: {fileID: 8264756130444229820}
-  - component: {fileID: 5220637927110907366}
+  - component: {fileID: 4552618879872526369}
   m_Layer: 5
-  m_Name: delete_confirm_backup_save_background_id
+  m_Name: restore_confirm_backup_save_background_id
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4462,7 +4462,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9043521064614391564}
   m_CullTransparentMesh: 1
---- !u!114 &5220637927110907366
+--- !u!114 &4552618879872526369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4475,7 +4475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4, g: 0.29411766, b: 0.23921569, a: 1}
+  m_Color: {r: 0.2, g: 0.4, b: 0.29803923, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0
@@ -4502,7 +4502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024483823202902819}
   - component: {fileID: 2674096719134757784}
-  - component: {fileID: 1481831746681563923}
+  - component: {fileID: 7929312164323136985}
   m_Layer: 5
   m_Name: close_button_background_id.1
   m_TagString: Untagged
@@ -4539,7 +4539,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9203302427993632074}
   m_CullTransparentMesh: 1
---- !u!114 &1481831746681563923
+--- !u!114 &7929312164323136985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

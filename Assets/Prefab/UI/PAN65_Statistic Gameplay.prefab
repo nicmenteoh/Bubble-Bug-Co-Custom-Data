@@ -3042,7 +3042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7138240544007614413}
   m_Layer: 5
-  m_Name: PAN65_Gameplay Statistic
+  m_Name: PAN65_Statistic Gameplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

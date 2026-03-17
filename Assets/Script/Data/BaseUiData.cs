@@ -2886,7 +2886,7 @@ namespace ProjectPestHuntData
         [ZeroFormattable]
         public class UiSprite
         {
-            [Index (0)] public virtual string location_background { get; set; }
+            [Index (0)] public virtual string location_background_id { get; set; }
             [Index (1)] public virtual string background_id { get; set; }
             [Index (2)] public virtual string gameplay_button_background_id { get; set; }
             [Index (3)] public virtual string gameplay_icon_id { get; set; }
@@ -3123,7 +3123,7 @@ namespace ProjectPestHuntData
         [ZeroFormattable]
         public class UiSprite
         {
-            [Index (0)] public virtual string location_background { get; set; }
+            [Index (0)] public virtual string location_background_id { get; set; }
             [Index (1)] public virtual string background_id { get; set; }
             [Index (2)] public virtual string gameplay_statistic_button_background_id { get; set; }
             [Index (3)] public virtual string gameplay_statistic_icon_id { get; set; }

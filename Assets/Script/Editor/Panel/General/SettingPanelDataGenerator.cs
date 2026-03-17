@@ -17,7 +17,7 @@ public class SettingPanelDataGenerator : MonoBehaviour
             asset_id = assetId,
             ui_sprite = new SettingPanelData.UiSprite
             {
-                location_background = "GUI435".ToLower (),
+                location_background_id = "GUI435".ToLower (),
                 background_id = "GUI432".ToLower (),
                 gameplay_button_background_id = "GUI433".ToLower (),
                 gameplay_icon_id = "GUI429".ToLower (),

@@ -17,7 +17,7 @@ public class StatisticPanelDataGenerator : MonoBehaviour
             asset_id = assetId,
             ui_sprite = new StatisticPanelData.UiSprite
             {
-                location_background = "GUI465".ToLower (),
+                location_background_id = "GUI465".ToLower (),
                 background_id = "GUI466".ToLower (),
                 gameplay_statistic_button_background_id = "GUI467".ToLower (),
                 gameplay_statistic_icon_id = "GUI463".ToLower (),

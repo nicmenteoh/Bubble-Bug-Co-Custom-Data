@@ -52,7 +52,7 @@ public class RankDataDataGenerator
 
         dataPath += $"/{AssetDataFilename.rank}";
         File.WriteAllBytes (dataPath, ZeroFormatterSerializer.Serialize (dataList));
-        dataPath = $"{Application.streamingAssetsPath}/Data/Asset/RankData.Data";
+        dataPath = $"{Application.streamingAssetsPath}/Data/Asset/RankData.json";
         File.WriteAllText (dataPath, JsonConvert.SerializeObject (dataList, Formatting.Indented));
 
         Debug.Log ($"<color=green>Asset data file \"{AssetDataFilename.rank}\" has generated successful.</color>");

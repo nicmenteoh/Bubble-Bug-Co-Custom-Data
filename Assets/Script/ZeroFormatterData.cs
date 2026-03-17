@@ -52476,7 +52476,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 var startOffset = offset;
 
                 offset += (8 + 4 * (11 + 1));
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 0, value.location_background);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 0, value.location_background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 1, value.background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 2, value.gameplay_button_background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 3, value.gameplay_icon_id);
@@ -52515,7 +52515,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         readonly int __binaryLastIndex;
         readonly byte[] __extraFixedBytes;
 
-        CacheSegment<TTypeResolver, string> _location_background;
+        CacheSegment<TTypeResolver, string> _location_background_id;
         CacheSegment<TTypeResolver, string> _background_id;
         CacheSegment<TTypeResolver, string> _gameplay_button_background_id;
         CacheSegment<TTypeResolver, string> _gameplay_icon_id;
@@ -52529,15 +52529,15 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         CacheSegment<TTypeResolver, string> _delete_backup_save_icon_id;
 
         // 0
-        public override string location_background
+        public override string location_background_id
         {
             get
             {
-                return _location_background.Value;
+                return _location_background_id.Value;
             }
             set
             {
-                _location_background.Value = value;
+                _location_background_id.Value = value;
             }
         }
 
@@ -52695,7 +52695,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
 
             this.__extraFixedBytes = ObjectSegmentHelper.CreateExtraFixedBytes(this.__binaryLastIndex, 11, __elementSizes);
 
-            _location_background = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 0, __binaryLastIndex, __tracker));
+            _location_background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 0, __binaryLastIndex, __tracker));
             _background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 1, __binaryLastIndex, __tracker));
             _gameplay_button_background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 2, __binaryLastIndex, __tracker));
             _gameplay_icon_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 3, __binaryLastIndex, __tracker));
@@ -52726,7 +52726,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 var startOffset = offset;
                 offset += (8 + 4 * (11 + 1));
 
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 0, ref _location_background);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 0, ref _location_background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 1, ref _background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 2, ref _gameplay_button_background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 3, ref _gameplay_icon_id);
@@ -56763,7 +56763,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 var startOffset = offset;
 
                 offset += (8 + 4 * (5 + 1));
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 0, value.location_background);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 0, value.location_background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 1, value.background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 2, value.gameplay_statistic_button_background_id);
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 3, value.gameplay_statistic_icon_id);
@@ -56796,7 +56796,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         readonly int __binaryLastIndex;
         readonly byte[] __extraFixedBytes;
 
-        CacheSegment<TTypeResolver, string> _location_background;
+        CacheSegment<TTypeResolver, string> _location_background_id;
         CacheSegment<TTypeResolver, string> _background_id;
         CacheSegment<TTypeResolver, string> _gameplay_statistic_button_background_id;
         CacheSegment<TTypeResolver, string> _gameplay_statistic_icon_id;
@@ -56804,15 +56804,15 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         CacheSegment<TTypeResolver, string> _discovery_statistic_icon_id;
 
         // 0
-        public override string location_background
+        public override string location_background_id
         {
             get
             {
-                return _location_background.Value;
+                return _location_background_id.Value;
             }
             set
             {
-                _location_background.Value = value;
+                _location_background_id.Value = value;
             }
         }
 
@@ -56892,7 +56892,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
 
             this.__extraFixedBytes = ObjectSegmentHelper.CreateExtraFixedBytes(this.__binaryLastIndex, 5, __elementSizes);
 
-            _location_background = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 0, __binaryLastIndex, __tracker));
+            _location_background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 0, __binaryLastIndex, __tracker));
             _background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 1, __binaryLastIndex, __tracker));
             _gameplay_statistic_button_background_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 2, __binaryLastIndex, __tracker));
             _gameplay_statistic_icon_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 3, __binaryLastIndex, __tracker));
@@ -56917,7 +56917,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 var startOffset = offset;
                 offset += (8 + 4 * (5 + 1));
 
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 0, ref _location_background);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 0, ref _location_background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 1, ref _background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 2, ref _gameplay_statistic_button_background_id);
                 offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 3, ref _gameplay_statistic_icon_id);
