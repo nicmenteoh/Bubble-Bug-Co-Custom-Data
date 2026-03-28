@@ -21,7 +21,7 @@ There are few categories of assets as listed below:
   - Rank (Level)
   - Hunt Result (At the hunting summary which the image with purple background)
 
-![Hunt Result Message](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/e4d4e6bdb40e88ba4af63b93fb2f5580ff9758ab/Screenshot/Hunt%20Result%20Message.png)
+![Hunt Result Message](/Screenshot/Hunt%20Result%20Message.png)
 
 I will not include changing UI panel images in this manual but you can find the instruction in manual [here](MANUAL/Changing UI Panel Image and Data.md).
 

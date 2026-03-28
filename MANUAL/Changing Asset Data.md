@@ -32,20 +32,20 @@ You need to refer to my raw data file in [Google Sheet](https://docs.google.com/
 
 ### Create CSV File (.csv)
 
-Copy all the data from any category in the Google Sheet to any excel program. I'm using LibreOffice Calc. I'll explain what each parameter in column does to the game in this manual below. You can delete the data in the row which you don't want to change. Make sure there is no blank row between 2 rows of data. And also make sure not to delete the parameter name at the first row.
+Copy all the data from any category in the Google Sheet to any excel program. I'm using LibreOffice Calc. I'll explain what the parameter in each column does to the game in this manual below. You can delete the data in the row which you don't want to change. Make sure there is no blank row between 2 rows of data. And also make sure not to delete the parameter name at the first row.
 
 After you have made the change, save the file to csv format (.csv). Use the pipe or vertical symbol `|` to separate the data between column. In LibreOffice Calc, after you save the file as csv, then put `|` symbol in `Field Delimiter` field.
 
-![Save as csv in LibreOffice Calc](/Screenshot/CSV Column Separator.png)
+![Save as csv in LibreOffice Calc](/Screenshot/CSV%20Column%20Separator.png)
 
 The example fairy data in csv file should look something like this:
 
-![Fairy Data csv](/Screenshot/Fairy Data CSV.png)
+![Fairy Data csv](/Screenshot/Fairy%20Data%20CSV.png)
 
 The other category data in csv file are also look similar.
 
-After you create the csv file, you have to rename the file to name listed below:
-| Category | csv Filename |
+After you create the csv file, you have to rename the file to the name listed below:
+| Category | CSV Filename |
 | --- | --- |
 | Fairy | Fairy Data.csv |
 | Fairy Food | Fairy Food Data.csv |
@@ -77,13 +77,13 @@ You can add your own data in new row. Make sure the dependency ID is also availa
 
 ### Create Data File from CSV File
 
-You need to convert the csv file to data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Data -> <The category data you want to generate>`, then click the option.
+You need to convert the csv file to data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Data -> <The category data you want to generate>`, then click that option.
 
-![Generate Asset Data File](/Screenshot/Generate Asset Data File.png)
+![Generate Asset Data File](/Screenshot/Generate%20Asset%20Data%20File.png)
 
 2 files will be generated in `Assets/StreamingAssets/Data/Asset/` folder. You can refer the message in the Unity Console view.
 
-![Fairy Data File](/Screenshot/Fairy Data File.png)
+![Fairy Data File](/Screenshot/Fairy%20Data%20File.png)
 
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.
@@ -102,7 +102,7 @@ The second file is data file (.data), in binary format. This is the file you nee
 
 In your game device, create a new folder and rename it to `Data` in the folder of any name you put. In the `Data` folder, add another folder and rename it to `Asset`. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Data/Asset/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Data/Asset/`. Copy the data file to the `Asset` folder.
 
-If you have change the ID in portrait, thumbnail and/or silhouette, make sure you also prepare the images and put the new ID in the image filename and put the image file in your game device mod folder. You can follow the instruction [here](MANUAL/Changing Asset Image.md).
+If you have change the ID in portrait, thumbnail and/or silhouette, make sure you also prepare the images and put the new ID in the image filename and put the image file in your game device mod folder. You can follow the instruction [here](MANUAL/Changing%20Asset%20Image.md).
 
 After you do all the steps above, you can launch the game.
 
@@ -317,7 +317,7 @@ Save the file as csv (.csv) and rename the file to `Material Data`. Move the csv
 | Name | - | - | For reference only. Not use in the game. |
 | Location | array of string (text) | LOC001,LOC002 | The location under this region. Use comma `,` to seperate multiple locations. Make sure this ID is exist in [location data](#changing-location-data). Whitespace ` ` is not allow. |
 | Fairy Appear ID | string (text) | FAI101 | The fairy which will appear as special reward during your hunt in this region. Make sure this ID is exist in [fairy data](#changing-fairy-data). |
-| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this region. This unit will be combine with unit in location data and activity data. Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
+| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this region. This unit will be combine with unit in [location data](#changing-location-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
 | Reward Poll | array of string (text) and int (number) | MAT101=2&MAT31=1 | The loot drop when unit in this region caught successful. This poll value will be added with other assets which has this parameter. Put the asset ID, then add an equal sign `=`, then poll value of this asset. Use and sign `&` to separate multiple loot drop poll. Make sure the asset ID is exist in the [fairy food](#changing-fairy-food-data), [bait](#changing-bait-data), [flavour](#changing-flavour-data), [ammo](#changing-ammo-data), [crystal](#changing-crystal-data) and [material](#changing-material-data) data. Whitespace ` ` is not allow. |
 
 Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Region` and select it. Put the newly generated `Region.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
@@ -331,10 +331,10 @@ Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv f
 | --- | --- | --- | --- |
 | ID | string (text) | UNI001 | The unique ID for this location asset. |
 | Name | - | - | For reference only. Not use in the game. |
-| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this location. This unit will be combine with unit in region data and activity data. Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
+| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this location. This unit will be combine with unit in [region data](#changing-region-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
 | Reward Poll | array of string (text) and int (number) | MAT101=2&MAT31=1 | The loot drop when unit in this location caught successful. This poll value will be added with other assets which has this parameter. Put the asset ID, then add an equal sign `=`, then poll value of this asset. Use and sign `&` to separate multiple loot drop poll. Make sure the asset ID is exist in the [fairy food](#changing-fairy-food-data), [bait](#changing-bait-data), [flavour](#changing-flavour-data), [ammo](#changing-ammo-data), [crystal](#changing-crystal-data) and [material](#changing-material-data) data. Whitespace ` ` is not allow. |
-| Activity | string (text) | ACT001 | The activity held in this location. Refer to [activity data](/MANUAL/Changing Activity Data.md). |
-| Intro | string (text) | INT001 | The dialogue happen when you move to this location at the first time. Make sure the dialogue ID is exist in [dialogue data](/MANUAL/Changing Dialogue Data.md). |
+| Activity | string (text) | ACT001 | The activity held in this location. Refer to [activity data](/MANUAL/Changing%20Activity%20Data.md). |
+| Intro | string (text) | INT001 | The dialogue happen when you move to this location at the first time. Make sure the dialogue ID is exist in [dialogue data](/MANUAL/Changing%20Dialogue%20Data.md). |
 | Portrait | string (text) | UNI001A | This location portrait image ID. You can put your own ID. |
 | Thumbnail | string (text) | UNI001C | This location thumbnail image ID. You can put your own ID. |
 
@@ -346,11 +346,11 @@ Save the file as csv (.csv) and rename the file to `Location Data`. Move the csv
 | --- | --- | --- | --- |
 | ID | string (text) | ELLI | The unique ID for this elemental asset. |
 | Name | - | - | For reference only. Not use in the game. |
-| Against | array of string (text) and int (number) | ELFI=50&ELWT=150 | This element against to other elements. For example, you put 200 to fire element. When you equip weapon with this elemnt and encounter a fire element unit, your fairy and weaponn strength combine will be double. |
+| Against | array of string (text) and int (number) | ELFI=50&ELWT=150 | This element against to other elements. For example, you put 200 to fire element. When you equip weapon with this elemnt and encounter a fire element unit, your fairy and weaponn strength combine will be double. Put the elemental ID, then add an equal sign `=`, then value. Use and sign `&` to separate multiple elemental value. Make sure the elemental ID is exist in this elemental data. Whitespace ` ` is not allow.|
 
 The default data can be represented in this chart:
 
-![Elemental Chart](/Screenshot/Elemental Chart.png)
+![Elemental Chart](/Screenshot/Elemental%20Chart.png)
 
 Save the file as csv (.csv) and rename the file to `Elemental Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Elemental` and select it. Put the newly generated `Elemental.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 

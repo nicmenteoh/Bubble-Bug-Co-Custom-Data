@@ -8,13 +8,13 @@ There are many UI panels in the game. You can refer to my [Google Sheets](https:
 
 After you open the project in Unity, go to Project view and search for `Assets/Prefab/UI/` folder. You will see all the panel prefab (templates) in that folder. Double click the prefab file to open it.
 
-![UI Panel Prefab](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Unity%20Project%20View%20Panel.png)
+![UI Panel Prefab](/Screenshot/Unity%20Project%20View%20Panel.png)
 
 ### Look for Image ID
 
 I have opened the `PAN4_Camp Display Panel` prefab and it looks like this:
 
-![Camp Display Panel](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Camp%20Display%20Panel%20Template.png)
+![Camp Display Panel](/Screenshot/Camp%20Display%20Panel%20Template.png)
 
 All the individual image and text game objects are in the Hierarchy view. Select any image game object and refer to Inspector view. Under `Rect Transform` component, look for `Width` and `Height` field. This is the resolution of the image.
 
@@ -30,7 +30,7 @@ The script is in C# programming language. If you familiar with Object Oriented P
 
 To know which image ID is associated with which image game object in the panel prefab, you just need to compare the name of the game object.
 
-![Game Object Name](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Game%20Object%20Name%20and%20ID.png)
+![Game Object Name](/Screenshot/Game%20Object%20Name%20and%20ID.png)
 
 ### Supported Image Format
 
@@ -60,7 +60,7 @@ For example and refer to the image above, let say you want to change the image I
 
 Changing the text colour is easier. You just need to find out the text game object by compare the name of the game object and inside the script file. Get the colour code in `R,G,B,A` format. The value is between `0 to 255`. For example and refer back to the image above, if you want to change the colour in `camp_title` from white to light green with a little transparency, the line in the script will look something like this: `camp_title = "162,230,178,230",`. You can tweak the colour in Unity then get the colour code.
 
-![Text Colour](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Text%20Colour.png)
+![Text Colour](/Screenshot/Text%20Colour.png)
 
 ### Additional Information
 
@@ -75,18 +75,18 @@ In the game object in some prefab, the names have additional keyword in it. Refe
 There's are some additional parameter in certain script. Refer to the table below:
 | Parameter | Description |
 | --- | --- |
-| intro_id | The dialogue happen when you visit the shop at the first time. Make sure the dialogue ID is exist in [dialogue data](). |
-| material_sprite | The material icon display in the panel. Refer to the parameter inside. Make sure the material ID is exist in [material data](). |
-| dialogue | The dialogue happen after you purchase items the shop. There are 2 parameters inside. `character_id` is which character to display. If you put your own character ID, make sure your character image has this character ID in the [image mod folder](MANUAL/Changing Asset Image.md). `position_LR` is either the character is display at the left or right. Use `L` for left and `R` for right. |
+| intro_id | The dialogue happen when you visit the shop at the first time. Make sure the dialogue ID is exist in [dialogue data](/MANUAL/Changing%20Dialogue%20Data.md). |
+| material_sprite | The material icon display in the panel. Refer to the parameter inside. Make sure the material ID is exist in [material data](/MANUAL/Changing%20Asset%20Data.md#changing-material-data). |
+| dialogue | The dialogue happen after you purchase items the shop. There are 2 parameters inside. `character_id` is which character to display. If you put your own character ID, make sure your character image has this character ID in the [image mod folder](/MANUAL/Changing%20Asset%20Image.md). `position_LR` is either the character is display at the left or right. Use `L` for left and `R` for right. |
 
 The following parameter only exist in `FairyBakeryPanelDataGenerator` script:
 | Parameter | Description |
 | --- | --- |
 | before_gift_intro_id | The dialogue happen when you visit the shop at the first time and before you receive the fairy food. |
 | after_gift_intro_id | The dialogue happen when you visit the shop at the first time and after you receive the fairy food. |
-| low_fairy_food_dialogue_id | The dialogue happen when you visit the shop and your fairy food is running low. The quantity you can change in [config data](). |
+| low_fairy_food_dialogue_id | The dialogue happen when you visit the shop and your fairy food is running low. The quantity you can change in [config data](/MANUAL/Changing%20Config%20Data.md). |
 
-Make sure all the dialogue ID is exist in [dialogue data]().
+Make sure all the dialogue ID is exist in [dialogue data](/MANUAL/Changing%20Dialogue%20Data.md).
 
 ### Location Background Image
 
@@ -96,15 +96,15 @@ In some scripts, you will see `location_background_id` but it is not found in th
 
 Unity cannot compile and run the newly modified script at runtime. Therefore you need to convert the data in the script to a data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Panel -> General -> Camp`, then click the option.
 
-![Generate Camp Panel Data File](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Generate%20Camp%20Panel%20Data%20File.png)
+![Generate Camp Panel Data File](/Screenshot/Generate%20Camp%20Panel%20Data%20File.png)
 
 > [!TIP]
 > There are lots of panel there which can make you confuse. You can always refer the name at the associated script, at the attribute above the function name.
-![Panel Menu Bar Name](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Panel%20Menu%20Bar%20Name.png)
+![Panel Menu Bar Name](/Screenshot/Panel%20Menu%20Bar%20Name.png)
 
 2 files will be generated in `Assets/StreamingAssets/Data/Panel/` folder. You can refer the message in the Unity Console view.
 
-![Camp Panel Data File](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Camp%20Panel%20Data%20File.png)
+![Camp Panel Data File](/Screenshot/Camp%20Panel%20Data%20File.png)
 
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.
