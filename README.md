@@ -17,13 +17,17 @@ You need to add a mod folder in your game device in order for the game to read t
 
 ### Changing Asset Images
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/MANUAL/Changing%20Asset%20Image.md).
 
 ### Changing UI Panel Images and Data
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/MANUAL/Changing%20UI%20Panel%20Image%20and%20Data.md).
 
 ### Changing Asset Data
+
+You can find the instruction manual [here]().
+
+### Changing Activity Data
 
 You can find the instruction manual [here]().
 
@@ -32,5 +36,9 @@ You can find the instruction manual [here]().
 You can find the instruction manual [here]().
 
 ### Changing UI Panel Language
+
+You can find the instruction manual [here]().
+
+### Changing Dialogue Language and Data
 
 You can find the instruction manual [here]().

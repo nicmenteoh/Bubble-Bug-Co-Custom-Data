@@ -60181,81 +60181,81 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
 
                 offset += (8 + 4 * (75 + 1));
                 offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 0, value.next_hunt_interval);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 1, value.royal_bug_chance);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 2, value.royal_bug_size_multiplier);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 3, value.royal_bug_coin_multiplier);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 4, value.royal_bug_addition_reward);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 5, value.max_material_capacity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 6, value.fairy_rarity_experience_per_level);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 7, value.fairy_rarity_max_level);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 8, value.fairy_experience_per_bug_catch);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 9, value.amount_of_fairy_awaken_item_exchange_to_fairy_awaken_core);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 10, value.fairy_appear_in_1_over_poll);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, byte>(ref bytes, startOffset, offset, 11, value.start_cage_amount);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 12, value.max_cage_amount_per_slot);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(ref bytes, startOffset, offset, 13, value.cage_crafting_materials);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 14, value.cage_unlock_cost);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 15, value.rage_experience_cap);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 16, value.rage_experience_gain);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 17, value.rage_up_message_id);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 18, value.rage_down_message_id);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 19, value.inverse_rage_up_message_id);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 20, value.inverse_rage_down_message_id);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 21, value.catch_failed_rage_drop_multiplier);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 22, value.catch_death_coin_reduce_multiplier);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 23, value.catch_death_extra_reputation_earn_multiplier);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 24, value.max_reward_per_catch);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 25, value.fade_transition_timer);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 26, value.fade_transition_move_offset);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 27, value.catch_status_transition_timer);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 28, value.profile_update_transition_timer);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 29, value.trap_history_count);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 30, value.gallery_fairy_caught_unit_display_per_page);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 31, value.dialogue_text_display_speed);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 32, value.food_stall_stock_refresh_after_hunt);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 33, value.food_stall_sales_chance);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 34, value.food_stall_next_event_after_hunt);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 35, value.food_stall_min_discount_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 36, value.food_stall_max_discount_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 37, value.food_stall_free_food_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 38, value.food_stall_min_free_food_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 39, value.food_stall_max_free_food_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 40, value.warehouse_full_claim_interval);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 41, value.warehouse_next_claim_interval);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 42, value.warehouse_free_claim_max_type);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 43, value.warehouse_free_claim_min_fairy_food_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 44, value.warehouse_free_claim_max_fairy_food_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 45, value.warehouse_free_claim_fairy_food_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 46, value.warehouse_free_claim_min_ammo_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 47, value.warehouse_free_claim_max_ammo_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 48, value.warehouse_free_claim_ammo_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 49, value.warehouse_free_claim_min_bait_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 50, value.warehouse_free_claim_max_bait_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 51, value.warehouse_free_claim_bait_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 52, value.warehouse_free_claim_min_flavour_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 53, value.warehouse_free_claim_max_flavour_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 54, value.warehouse_free_claim_flavour_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 55, value.warehouse_free_claim_min_material_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 56, value.warehouse_free_claim_max_material_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 57, value.warehouse_free_claim_material_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 58, value.ammo_dealer_next_event_after_hunt);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 59, value.ammo_dealer_free_ammo_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 60, value.ammo_dealer_min_free_ammo_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 61, value.ammo_dealer_max_free_ammo_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 62, value.fairy_bakery_first_meet_free_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 63, value.fairy_bakery_low_food_amount);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 64, value.fairy_bakery_low_food_free_quantity);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 65, value.fairy_bakery_sales_chance_every_hunt);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 66, value.fairy_bakery_min_discount_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 67, value.fairy_bakery_max_discount_percentage);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 68, value.camp_hunt_available_highlight_interval);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 69, value.dialogue_sfx_play_next_interval);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 70, value.credit_display_speed);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 71, value.new_game_intro);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 72, value.starting_trap);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 73, value.starting_location);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 74, value.tutorial_trap_and_catch);
-                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 75, value.tutorial_location);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 1, value.new_game_intro);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 2, value.starting_trap);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 3, value.starting_location);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref bytes, startOffset, offset, 4, value.tutorial_trap_and_catch);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 5, value.tutorial_location);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 6, value.royal_bug_chance);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 7, value.royal_bug_size_multiplier);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 8, value.royal_bug_coin_multiplier);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 9, value.royal_bug_addition_reward);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 10, value.max_material_capacity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 11, value.fairy_rarity_experience_per_level);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 12, value.fairy_rarity_max_level);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 13, value.fairy_experience_per_bug_catch);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 14, value.amount_of_fairy_awaken_item_exchange_to_fairy_awaken_core);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 15, value.fairy_appear_in_1_over_poll);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, byte>(ref bytes, startOffset, offset, 16, value.start_cage_amount);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 17, value.max_cage_amount_per_slot);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(ref bytes, startOffset, offset, 18, value.cage_crafting_materials);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 19, value.cage_unlock_cost);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 20, value.rage_experience_cap);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref bytes, startOffset, offset, 21, value.rage_experience_gain);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 22, value.rage_up_message_id);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 23, value.rage_down_message_id);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 24, value.inverse_rage_up_message_id);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, string>(ref bytes, startOffset, offset, 25, value.inverse_rage_down_message_id);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 26, value.catch_failed_rage_drop_multiplier);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 27, value.catch_death_coin_reduce_multiplier);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 28, value.catch_death_extra_reputation_earn_multiplier);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 29, value.max_reward_per_catch);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 30, value.fade_transition_timer);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 31, value.fade_transition_move_offset);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 32, value.catch_status_transition_timer);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 33, value.profile_update_transition_timer);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 34, value.trap_history_count);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 35, value.gallery_fairy_caught_unit_display_per_page);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 36, value.dialogue_text_display_speed);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 37, value.food_stall_stock_refresh_after_hunt);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 38, value.food_stall_sales_chance);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 39, value.food_stall_next_event_after_hunt);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 40, value.food_stall_min_discount_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 41, value.food_stall_max_discount_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 42, value.food_stall_free_food_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 43, value.food_stall_min_free_food_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 44, value.food_stall_max_free_food_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 45, value.warehouse_full_claim_interval);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 46, value.warehouse_next_claim_interval);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 47, value.warehouse_free_claim_max_type);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 48, value.warehouse_free_claim_min_fairy_food_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 49, value.warehouse_free_claim_max_fairy_food_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 50, value.warehouse_free_claim_fairy_food_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 51, value.warehouse_free_claim_min_ammo_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 52, value.warehouse_free_claim_max_ammo_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 53, value.warehouse_free_claim_ammo_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 54, value.warehouse_free_claim_min_bait_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 55, value.warehouse_free_claim_max_bait_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 56, value.warehouse_free_claim_bait_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 57, value.warehouse_free_claim_min_flavour_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 58, value.warehouse_free_claim_max_flavour_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 59, value.warehouse_free_claim_flavour_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 60, value.warehouse_free_claim_min_material_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 61, value.warehouse_free_claim_max_material_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 62, value.warehouse_free_claim_material_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 63, value.ammo_dealer_next_event_after_hunt);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 64, value.ammo_dealer_free_ammo_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 65, value.ammo_dealer_min_free_ammo_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 66, value.ammo_dealer_max_free_ammo_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 67, value.fairy_bakery_first_meet_free_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 68, value.fairy_bakery_low_food_amount);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 69, value.fairy_bakery_low_food_free_quantity);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 70, value.fairy_bakery_sales_chance_every_hunt);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 71, value.fairy_bakery_min_discount_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, int>(ref bytes, startOffset, offset, 72, value.fairy_bakery_max_discount_percentage);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 73, value.camp_hunt_available_highlight_interval);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 74, value.dialogue_sfx_play_next_interval);
+                offset += ObjectSegmentHelper.SerializeFromFormatter<TTypeResolver, float>(ref bytes, startOffset, offset, 75, value.credit_display_speed);
 
                 return ObjectSegmentHelper.WriteSize(ref bytes, startOffset, offset, 75);
             }
@@ -60276,13 +60276,18 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
     public class GlobalConfigObjectSegment<TTypeResolver> : global::ProjectPestHuntData.GlobalConfig, IZeroFormatterSegment
         where TTypeResolver : ITypeResolver, new()
     {
-        static readonly int[] __elementSizes = new int[]{ 4, 4, 4, 4, 4, 4, 0, 0, 4, 4, 4, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0 };
+        static readonly int[] __elementSizes = new int[]{ 4, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 0, 0, 4, 4, 4, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4 };
 
         readonly ArraySegment<byte> __originalBytes;
         readonly global::ZeroFormatter.DirtyTracker __tracker;
         readonly int __binaryLastIndex;
         readonly byte[] __extraFixedBytes;
 
+        global::System.Collections.Generic.IList<string> _new_game_intro;
+        global::System.Collections.Generic.IList<string> _starting_trap;
+        CacheSegment<TTypeResolver, string> _starting_location;
+        global::System.Collections.Generic.IList<string> _tutorial_trap_and_catch;
+        CacheSegment<TTypeResolver, string> _tutorial_location;
         global::System.Collections.Generic.IList<int> _fairy_rarity_experience_per_level;
         global::System.Collections.Generic.IList<int> _fairy_rarity_max_level;
         global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial> _cage_crafting_materials;
@@ -60293,11 +60298,6 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         CacheSegment<TTypeResolver, string> _rage_down_message_id;
         CacheSegment<TTypeResolver, string> _inverse_rage_up_message_id;
         CacheSegment<TTypeResolver, string> _inverse_rage_down_message_id;
-        global::System.Collections.Generic.IList<string> _new_game_intro;
-        global::System.Collections.Generic.IList<string> _starting_trap;
-        CacheSegment<TTypeResolver, string> _starting_location;
-        global::System.Collections.Generic.IList<string> _tutorial_trap_and_catch;
-        CacheSegment<TTypeResolver, string> _tutorial_location;
 
         // 0
         public override int next_hunt_interval
@@ -60313,922 +60313,6 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
         }
 
         // 1
-        public override int royal_bug_chance
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 1, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 1, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 2
-        public override float royal_bug_size_multiplier
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 2, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 2, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 3
-        public override float royal_bug_coin_multiplier
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 3, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 3, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 4
-        public override int royal_bug_addition_reward
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 4, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 4, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 5
-        public override int max_material_capacity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 5, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 5, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 6
-        public override global::System.Collections.Generic.IList<int> fairy_rarity_experience_per_level
-        {
-            get
-            {
-                return _fairy_rarity_experience_per_level;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _fairy_rarity_experience_per_level = value;
-            }
-        }
-
-        // 7
-        public override global::System.Collections.Generic.IList<int> fairy_rarity_max_level
-        {
-            get
-            {
-                return _fairy_rarity_max_level;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _fairy_rarity_max_level = value;
-            }
-        }
-
-        // 8
-        public override int fairy_experience_per_bug_catch
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 8, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 8, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 9
-        public override int amount_of_fairy_awaken_item_exchange_to_fairy_awaken_core
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 9, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 9, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 10
-        public override int fairy_appear_in_1_over_poll
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 10, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 10, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 11
-        public override byte start_cage_amount
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, byte>(__originalBytes, 11, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, byte>(__originalBytes, 11, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 12
-        public override int max_cage_amount_per_slot
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 12, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 12, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 13
-        public override global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial> cage_crafting_materials
-        {
-            get
-            {
-                return _cage_crafting_materials;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _cage_crafting_materials = value;
-            }
-        }
-
-        // 14
-        public override global::System.Collections.Generic.IList<int> cage_unlock_cost
-        {
-            get
-            {
-                return _cage_unlock_cost;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _cage_unlock_cost = value;
-            }
-        }
-
-        // 15
-        public override global::System.Collections.Generic.IList<int> rage_experience_cap
-        {
-            get
-            {
-                return _rage_experience_cap;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _rage_experience_cap = value;
-            }
-        }
-
-        // 16
-        public override global::System.Collections.Generic.IList<int> rage_experience_gain
-        {
-            get
-            {
-                return _rage_experience_gain;
-            }
-            set
-            {
-                __tracker.Dirty();
-                _rage_experience_gain = value;
-            }
-        }
-
-        // 17
-        public override string rage_up_message_id
-        {
-            get
-            {
-                return _rage_up_message_id.Value;
-            }
-            set
-            {
-                _rage_up_message_id.Value = value;
-            }
-        }
-
-        // 18
-        public override string rage_down_message_id
-        {
-            get
-            {
-                return _rage_down_message_id.Value;
-            }
-            set
-            {
-                _rage_down_message_id.Value = value;
-            }
-        }
-
-        // 19
-        public override string inverse_rage_up_message_id
-        {
-            get
-            {
-                return _inverse_rage_up_message_id.Value;
-            }
-            set
-            {
-                _inverse_rage_up_message_id.Value = value;
-            }
-        }
-
-        // 20
-        public override string inverse_rage_down_message_id
-        {
-            get
-            {
-                return _inverse_rage_down_message_id.Value;
-            }
-            set
-            {
-                _inverse_rage_down_message_id.Value = value;
-            }
-        }
-
-        // 21
-        public override float catch_failed_rage_drop_multiplier
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 21, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 21, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 22
-        public override float catch_death_coin_reduce_multiplier
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 22, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 22, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 23
-        public override float catch_death_extra_reputation_earn_multiplier
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 23, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 23, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 24
-        public override int max_reward_per_catch
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 24, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 24, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 25
-        public override float fade_transition_timer
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 25, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 25, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 26
-        public override float fade_transition_move_offset
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 26, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 26, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 27
-        public override float catch_status_transition_timer
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 27, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 27, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 28
-        public override float profile_update_transition_timer
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 28, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 28, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 29
-        public override int trap_history_count
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 29, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 29, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 30
-        public override int gallery_fairy_caught_unit_display_per_page
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 30, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 30, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 31
-        public override int dialogue_text_display_speed
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 31, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 31, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 32
-        public override int food_stall_stock_refresh_after_hunt
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 32, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 32, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 33
-        public override int food_stall_sales_chance
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 33, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 33, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 34
-        public override int food_stall_next_event_after_hunt
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 34, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 34, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 35
-        public override int food_stall_min_discount_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 35, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 35, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 36
-        public override int food_stall_max_discount_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 36, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 36, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 37
-        public override int food_stall_free_food_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 37, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 37, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 38
-        public override int food_stall_min_free_food_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 38, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 38, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 39
-        public override int food_stall_max_free_food_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 39, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 39, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 40
-        public override int warehouse_full_claim_interval
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 40, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 40, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 41
-        public override int warehouse_next_claim_interval
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 41, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 41, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 42
-        public override int warehouse_free_claim_max_type
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 42, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 42, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 43
-        public override int warehouse_free_claim_min_fairy_food_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 43, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 43, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 44
-        public override int warehouse_free_claim_max_fairy_food_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 44, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 44, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 45
-        public override int warehouse_free_claim_fairy_food_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 45, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 45, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 46
-        public override int warehouse_free_claim_min_ammo_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 46, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 46, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 47
-        public override int warehouse_free_claim_max_ammo_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 47, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 47, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 48
-        public override int warehouse_free_claim_ammo_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 48, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 48, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 49
-        public override int warehouse_free_claim_min_bait_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 49, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 49, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 50
-        public override int warehouse_free_claim_max_bait_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 50, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 50, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 51
-        public override int warehouse_free_claim_bait_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 51, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 51, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 52
-        public override int warehouse_free_claim_min_flavour_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 52, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 52, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 53
-        public override int warehouse_free_claim_max_flavour_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 53, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 53, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 54
-        public override int warehouse_free_claim_flavour_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 54, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 54, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 55
-        public override int warehouse_free_claim_min_material_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 55, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 55, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 56
-        public override int warehouse_free_claim_max_material_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 56, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 56, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 57
-        public override int warehouse_free_claim_material_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 57, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 57, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 58
-        public override int ammo_dealer_next_event_after_hunt
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 58, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 58, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 59
-        public override int ammo_dealer_free_ammo_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 59, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 59, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 60
-        public override int ammo_dealer_min_free_ammo_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 60, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 60, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 61
-        public override int ammo_dealer_max_free_ammo_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 61, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 61, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 62
-        public override int fairy_bakery_first_meet_free_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 62, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 62, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 63
-        public override int fairy_bakery_low_food_amount
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 63, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 63, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 64
-        public override int fairy_bakery_low_food_free_quantity
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 64, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 64, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 65
-        public override int fairy_bakery_sales_chance_every_hunt
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 65, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 65, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 66
-        public override int fairy_bakery_min_discount_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 66, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 66, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 67
-        public override int fairy_bakery_max_discount_percentage
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 67, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 67, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 68
-        public override float camp_hunt_available_highlight_interval
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 68, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 68, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 69
-        public override float dialogue_sfx_play_next_interval
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 69, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 69, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 70
-        public override float credit_display_speed
-        {
-            get
-            {
-                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 70, __binaryLastIndex, __extraFixedBytes, __tracker);
-            }
-            set
-            {
-                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 70, __binaryLastIndex, __extraFixedBytes, value, __tracker);
-            }
-        }
-
-        // 71
         public override global::System.Collections.Generic.IList<string> new_game_intro
         {
             get
@@ -61242,7 +60326,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
             }
         }
 
-        // 72
+        // 2
         public override global::System.Collections.Generic.IList<string> starting_trap
         {
             get
@@ -61256,7 +60340,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
             }
         }
 
-        // 73
+        // 3
         public override string starting_location
         {
             get
@@ -61269,7 +60353,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
             }
         }
 
-        // 74
+        // 4
         public override global::System.Collections.Generic.IList<string> tutorial_trap_and_catch
         {
             get
@@ -61283,7 +60367,7 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
             }
         }
 
-        // 75
+        // 5
         public override string tutorial_location
         {
             get
@@ -61293,6 +60377,922 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
             set
             {
                 _tutorial_location.Value = value;
+            }
+        }
+
+        // 6
+        public override int royal_bug_chance
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 6, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 6, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 7
+        public override float royal_bug_size_multiplier
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 7, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 7, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 8
+        public override float royal_bug_coin_multiplier
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 8, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 8, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 9
+        public override int royal_bug_addition_reward
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 9, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 9, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 10
+        public override int max_material_capacity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 10, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 10, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 11
+        public override global::System.Collections.Generic.IList<int> fairy_rarity_experience_per_level
+        {
+            get
+            {
+                return _fairy_rarity_experience_per_level;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _fairy_rarity_experience_per_level = value;
+            }
+        }
+
+        // 12
+        public override global::System.Collections.Generic.IList<int> fairy_rarity_max_level
+        {
+            get
+            {
+                return _fairy_rarity_max_level;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _fairy_rarity_max_level = value;
+            }
+        }
+
+        // 13
+        public override int fairy_experience_per_bug_catch
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 13, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 13, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 14
+        public override int amount_of_fairy_awaken_item_exchange_to_fairy_awaken_core
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 14, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 14, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 15
+        public override int fairy_appear_in_1_over_poll
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 15, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 15, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 16
+        public override byte start_cage_amount
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, byte>(__originalBytes, 16, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, byte>(__originalBytes, 16, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 17
+        public override int max_cage_amount_per_slot
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 17, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 17, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 18
+        public override global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial> cage_crafting_materials
+        {
+            get
+            {
+                return _cage_crafting_materials;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _cage_crafting_materials = value;
+            }
+        }
+
+        // 19
+        public override global::System.Collections.Generic.IList<int> cage_unlock_cost
+        {
+            get
+            {
+                return _cage_unlock_cost;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _cage_unlock_cost = value;
+            }
+        }
+
+        // 20
+        public override global::System.Collections.Generic.IList<int> rage_experience_cap
+        {
+            get
+            {
+                return _rage_experience_cap;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _rage_experience_cap = value;
+            }
+        }
+
+        // 21
+        public override global::System.Collections.Generic.IList<int> rage_experience_gain
+        {
+            get
+            {
+                return _rage_experience_gain;
+            }
+            set
+            {
+                __tracker.Dirty();
+                _rage_experience_gain = value;
+            }
+        }
+
+        // 22
+        public override string rage_up_message_id
+        {
+            get
+            {
+                return _rage_up_message_id.Value;
+            }
+            set
+            {
+                _rage_up_message_id.Value = value;
+            }
+        }
+
+        // 23
+        public override string rage_down_message_id
+        {
+            get
+            {
+                return _rage_down_message_id.Value;
+            }
+            set
+            {
+                _rage_down_message_id.Value = value;
+            }
+        }
+
+        // 24
+        public override string inverse_rage_up_message_id
+        {
+            get
+            {
+                return _inverse_rage_up_message_id.Value;
+            }
+            set
+            {
+                _inverse_rage_up_message_id.Value = value;
+            }
+        }
+
+        // 25
+        public override string inverse_rage_down_message_id
+        {
+            get
+            {
+                return _inverse_rage_down_message_id.Value;
+            }
+            set
+            {
+                _inverse_rage_down_message_id.Value = value;
+            }
+        }
+
+        // 26
+        public override float catch_failed_rage_drop_multiplier
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 26, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 26, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 27
+        public override float catch_death_coin_reduce_multiplier
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 27, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 27, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 28
+        public override float catch_death_extra_reputation_earn_multiplier
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 28, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 28, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 29
+        public override int max_reward_per_catch
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 29, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 29, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 30
+        public override float fade_transition_timer
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 30, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 30, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 31
+        public override float fade_transition_move_offset
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 31, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 31, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 32
+        public override float catch_status_transition_timer
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 32, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 32, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 33
+        public override float profile_update_transition_timer
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 33, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 33, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 34
+        public override int trap_history_count
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 34, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 34, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 35
+        public override int gallery_fairy_caught_unit_display_per_page
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 35, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 35, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 36
+        public override int dialogue_text_display_speed
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 36, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 36, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 37
+        public override int food_stall_stock_refresh_after_hunt
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 37, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 37, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 38
+        public override int food_stall_sales_chance
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 38, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 38, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 39
+        public override int food_stall_next_event_after_hunt
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 39, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 39, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 40
+        public override int food_stall_min_discount_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 40, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 40, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 41
+        public override int food_stall_max_discount_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 41, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 41, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 42
+        public override int food_stall_free_food_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 42, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 42, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 43
+        public override int food_stall_min_free_food_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 43, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 43, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 44
+        public override int food_stall_max_free_food_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 44, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 44, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 45
+        public override int warehouse_full_claim_interval
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 45, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 45, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 46
+        public override int warehouse_next_claim_interval
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 46, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 46, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 47
+        public override int warehouse_free_claim_max_type
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 47, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 47, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 48
+        public override int warehouse_free_claim_min_fairy_food_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 48, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 48, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 49
+        public override int warehouse_free_claim_max_fairy_food_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 49, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 49, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 50
+        public override int warehouse_free_claim_fairy_food_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 50, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 50, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 51
+        public override int warehouse_free_claim_min_ammo_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 51, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 51, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 52
+        public override int warehouse_free_claim_max_ammo_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 52, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 52, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 53
+        public override int warehouse_free_claim_ammo_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 53, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 53, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 54
+        public override int warehouse_free_claim_min_bait_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 54, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 54, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 55
+        public override int warehouse_free_claim_max_bait_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 55, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 55, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 56
+        public override int warehouse_free_claim_bait_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 56, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 56, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 57
+        public override int warehouse_free_claim_min_flavour_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 57, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 57, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 58
+        public override int warehouse_free_claim_max_flavour_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 58, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 58, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 59
+        public override int warehouse_free_claim_flavour_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 59, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 59, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 60
+        public override int warehouse_free_claim_min_material_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 60, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 60, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 61
+        public override int warehouse_free_claim_max_material_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 61, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 61, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 62
+        public override int warehouse_free_claim_material_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 62, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 62, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 63
+        public override int ammo_dealer_next_event_after_hunt
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 63, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 63, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 64
+        public override int ammo_dealer_free_ammo_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 64, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 64, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 65
+        public override int ammo_dealer_min_free_ammo_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 65, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 65, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 66
+        public override int ammo_dealer_max_free_ammo_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 66, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 66, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 67
+        public override int fairy_bakery_first_meet_free_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 67, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 67, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 68
+        public override int fairy_bakery_low_food_amount
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 68, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 68, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 69
+        public override int fairy_bakery_low_food_free_quantity
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 69, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 69, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 70
+        public override int fairy_bakery_sales_chance_every_hunt
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 70, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 70, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 71
+        public override int fairy_bakery_min_discount_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 71, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 71, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 72
+        public override int fairy_bakery_max_discount_percentage
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, int>(__originalBytes, 72, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, int>(__originalBytes, 72, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 73
+        public override float camp_hunt_available_highlight_interval
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 73, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 73, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 74
+        public override float dialogue_sfx_play_next_interval
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 74, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 74, __binaryLastIndex, __extraFixedBytes, value, __tracker);
+            }
+        }
+
+        // 75
+        public override float credit_display_speed
+        {
+            get
+            {
+                return ObjectSegmentHelper.GetFixedProperty<TTypeResolver, float>(__originalBytes, 75, __binaryLastIndex, __extraFixedBytes, __tracker);
+            }
+            set
+            {
+                ObjectSegmentHelper.SetFixedProperty<TTypeResolver, float>(__originalBytes, 75, __binaryLastIndex, __extraFixedBytes, value, __tracker);
             }
         }
 
@@ -61307,21 +61307,21 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
 
             this.__extraFixedBytes = ObjectSegmentHelper.CreateExtraFixedBytes(this.__binaryLastIndex, 75, __elementSizes);
 
-            _fairy_rarity_experience_per_level = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 6, __binaryLastIndex, __tracker);
-            _fairy_rarity_max_level = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 7, __binaryLastIndex, __tracker);
-            _cage_crafting_materials = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(originalBytes, 13, __binaryLastIndex, __tracker);
-            _cage_unlock_cost = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 14, __binaryLastIndex, __tracker);
-            _rage_experience_cap = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 15, __binaryLastIndex, __tracker);
-            _rage_experience_gain = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 16, __binaryLastIndex, __tracker);
-            _rage_up_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 17, __binaryLastIndex, __tracker));
-            _rage_down_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 18, __binaryLastIndex, __tracker));
-            _inverse_rage_up_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 19, __binaryLastIndex, __tracker));
-            _inverse_rage_down_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 20, __binaryLastIndex, __tracker));
-            _new_game_intro = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 71, __binaryLastIndex, __tracker);
-            _starting_trap = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 72, __binaryLastIndex, __tracker);
-            _starting_location = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 73, __binaryLastIndex, __tracker));
-            _tutorial_trap_and_catch = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 74, __binaryLastIndex, __tracker);
-            _tutorial_location = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 75, __binaryLastIndex, __tracker));
+            _new_game_intro = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 1, __binaryLastIndex, __tracker);
+            _starting_trap = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 2, __binaryLastIndex, __tracker);
+            _starting_location = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 3, __binaryLastIndex, __tracker));
+            _tutorial_trap_and_catch = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(originalBytes, 4, __binaryLastIndex, __tracker);
+            _tutorial_location = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 5, __binaryLastIndex, __tracker));
+            _fairy_rarity_experience_per_level = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 11, __binaryLastIndex, __tracker);
+            _fairy_rarity_max_level = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 12, __binaryLastIndex, __tracker);
+            _cage_crafting_materials = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(originalBytes, 18, __binaryLastIndex, __tracker);
+            _cage_unlock_cost = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 19, __binaryLastIndex, __tracker);
+            _rage_experience_cap = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 20, __binaryLastIndex, __tracker);
+            _rage_experience_gain = ObjectSegmentHelper.DeserializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(originalBytes, 21, __binaryLastIndex, __tracker);
+            _rage_up_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 22, __binaryLastIndex, __tracker));
+            _rage_down_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 23, __binaryLastIndex, __tracker));
+            _inverse_rage_up_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 24, __binaryLastIndex, __tracker));
+            _inverse_rage_down_message_id = new CacheSegment<TTypeResolver, string>(__tracker, ObjectSegmentHelper.GetSegment(originalBytes, 25, __binaryLastIndex, __tracker));
         }
 
         public bool CanDirectCopy()
@@ -61342,39 +61342,39 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 offset += (8 + 4 * (75 + 1));
 
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 0, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 1, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 2, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 3, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 4, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 5, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 6, _fairy_rarity_experience_per_level);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 7, _fairy_rarity_max_level);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 8, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 1, _new_game_intro);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 2, _starting_trap);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 3, ref _starting_location);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 4, _tutorial_trap_and_catch);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 5, ref _tutorial_location);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 6, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 7, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 8, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 9, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 10, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, byte>(ref targetBytes, startOffset, offset, 11, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 12, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(ref targetBytes, startOffset, offset, 13, _cage_crafting_materials);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 14, _cage_unlock_cost);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 15, _rage_experience_cap);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 16, _rage_experience_gain);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 17, ref _rage_up_message_id);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 18, ref _rage_down_message_id);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 19, ref _inverse_rage_up_message_id);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 20, ref _inverse_rage_down_message_id);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 21, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 22, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 23, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 24, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 25, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 11, _fairy_rarity_experience_per_level);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 12, _fairy_rarity_max_level);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 13, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 14, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 15, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, byte>(ref targetBytes, startOffset, offset, 16, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 17, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<global::ProjectPestHuntData.MaterialData.CraftMaterial>>(ref targetBytes, startOffset, offset, 18, _cage_crafting_materials);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 19, _cage_unlock_cost);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 20, _rage_experience_cap);
+                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<int>>(ref targetBytes, startOffset, offset, 21, _rage_experience_gain);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 22, ref _rage_up_message_id);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 23, ref _rage_down_message_id);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 24, ref _inverse_rage_up_message_id);
+                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 25, ref _inverse_rage_down_message_id);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 26, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 27, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 28, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 29, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 30, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 31, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 32, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 33, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 30, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 31, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 32, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 33, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 34, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 35, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 36, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
@@ -61409,14 +61409,14 @@ namespace ZeroFormatter.DynamicObjectSegments.ProjectPestHuntData
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 65, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 66, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
                 offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 67, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 68, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 69, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 70, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 71, _new_game_intro);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 72, _starting_trap);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 73, ref _starting_location);
-                offset += ObjectSegmentHelper.SerializeSegment<TTypeResolver, global::System.Collections.Generic.IList<string>>(ref targetBytes, startOffset, offset, 74, _tutorial_trap_and_catch);
-                offset += ObjectSegmentHelper.SerializeCacheSegment<TTypeResolver, string>(ref targetBytes, startOffset, offset, 75, ref _tutorial_location);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 68, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 69, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 70, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 71, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, int>(ref targetBytes, startOffset, offset, 72, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 73, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 74, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
+                offset += ObjectSegmentHelper.SerializeFixedLength<TTypeResolver, float>(ref targetBytes, startOffset, offset, 75, __binaryLastIndex, __originalBytes, __extraFixedBytes, __tracker);
 
                 return ObjectSegmentHelper.WriteSize(ref targetBytes, startOffset, offset, 75);
             }

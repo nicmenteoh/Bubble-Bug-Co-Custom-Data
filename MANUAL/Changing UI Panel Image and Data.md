@@ -1,17 +1,23 @@
-### Refer to UI Panel Template
+[Before you begin](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data)
 
-There are many UI panels in the game. You can refer to my [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing) under UI sheet to get the image ID. Unless you know which image is assign to which UI panel, else you are recommended to [download my Unity project](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data) to search for the UI panel template. I'm using Unity 6 (6000.3.x).
+### Get UI Panel Template
+
+There are many UI panels in the game. You can refer to my [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing) under UI sheet to get the image ID. Unless you know which image is assign to which UI panel, else you are recommended to [download my Unity project](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data) to search for the UI panel template. Any Unity version will do.
 > [!NOTE]
 > Of course you need to have some knowledge to operate Unity game engine especially at UI part. There are tons of tutorial out there and it is not hard to learn.
 
 After you open the project in Unity, go to Project view and search for `Assets/Prefab/UI/` folder. You will see all the panel prefab (templates) in that folder. Double click the prefab file to open it.
-![UI Panel Prefab]()
+
+![UI Panel Prefab](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Unity%20Project%20View%20Panel.png)
 
 ### Look for Image ID
 
 I have opened the `PAN4_Camp Display Panel` prefab and it looks like this:
-![Camp Display Panel]()
+
+![Camp Display Panel](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Camp%20Display%20Panel%20Template.png)
+
 All the individual image and text game objects are in the Hierarchy view. Select any image game object and refer to Inspector view. Under `Rect Transform` component, look for `Width` and `Height` field. This is the resolution of the image.
+
 > [!TIP]
 > In case you can't identify which game object is image or text. For the image game object, there is an `Image` component in the Inspector view. For the text game object, there is an `TextMesgPro - Text (UI)` component in the Inspector view.
 
@@ -23,7 +29,8 @@ I store the image ID in script file. You can open the file using any text editor
 The script is in C# programming language. If you familiar with Object Oriented Programming, the script is easy to understand. When you go through the script, you will notice there are a lot of ID with `GUIxxx` and `255,255,255,255`. `GUIxxx` is the image ID and `255,255,255,255` is the colour of the text.
 
 To know which image ID is associated with which image game object in the panel prefab, you just need to compare the name of the game object.
-![Game Object Name]()
+
+![Game Object Name](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Game%20Object%20Name%20and%20ID.png)
 
 ### Supported Image Format
 
@@ -34,6 +41,7 @@ Only support JPG and PNG image.
 The filename should be looked something like this: `WEA3A_WeaponName`.
 
 There are 2 sections in the filename. Each section is separated by underscore symbol `_`. The left section is the image ID which you need to follow. The right section is the image name which you can put whatever name for your reference.
+
 > [!WARNING]
 > If the underscore symbol `_` is not found in the filename, the whole filename will be treated as image ID.
 
@@ -46,11 +54,39 @@ In your game device, you need to add a new folder and rename it to `Sprite` in t
 Some images are shared with few panels. Therefore you will see same image ID appear in some scripts, especially the `background_id` and `midground_id`. If you don't want that image ID share with other panel, you can create your own image ID.
 
 For example and refer to the image above, let say you want to change the image ID in `background_id` because you don't want the image share with other panel, you can change the image ID from `GUI31` to whatever ID you want, for example ID change to `IMG1312`. The line in the script will look something like this: `background_id = "IMG1312".ToLower (),`. After that, rename you new image name to something like this `IMG1312_YourImageName` and put inside the `UI` folder.
-> [!WARNING]
+
+> [!IMPORTANT]
 > Do not use the ID start with the alphabet characters same with mine because it may crash with my ID at future update. It is also not recommended to have a long ID. 6 to 10 characters are suffice.
 
 Changing the text colour is easier. You just need to find out the text game object by compare the name of the game object and inside the script file. Get the colour code in `R,G,B,A` format. The value is between `0 to 255`. For example and refer back to the image above, if you want to change the colour in `camp_title` from white to light green with a little transparency, the line in the script will look something like this: `camp_title = "162,230,178,230",`. You can tweak the colour in Unity then get the colour code.
-![Text Colour]()
+
+![Text Colour](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Text%20Colour.png)
+
+### Additional Information
+
+In the game object in some prefab, the names have additional keyword in it. Refer to the table below:
+| Keyword | Sample | Description |
+| --- | --- | --- |
+| `<` `>` | `<`fairy_id`>` | This image will be replaced by asset portrait, thumbnail or silhouette. |
+| `--` `--` | `--` Scroll View `--` | Just ignore this game object. |
+| `ASH` | discount_id `ASH` | The image will be auto scale horizontally. |
+| `ASV` | scroll_view_handler `ASV` | The image will be auto scale vertically. |
+
+There's are some additional parameter in certain script. Refer to the table below:
+| Parameter | Description |
+| --- | --- |
+| intro_id | The dialogue happen when you visit the shop at the first time. Make sure the dialogue ID is exist in [dialogue data](). |
+| material_sprite | The material icon display in the panel. Refer to the parameter inside. Make sure the material ID is exist in [material data](). |
+| dialogue | The dialogue happen after you purchase items the shop. There are 2 parameters inside. `character_id` is which character to display. If you put your own character ID, make sure your character image has this character ID in the [image mod folder](MANUAL/Changing Asset Image.md). `position_LR` is either the character is display at the left or right. Use `L` for left and `R` for right. |
+
+The following parameter only exist in `FairyBakeryPanelDataGenerator` script:
+| Parameter | Description |
+| --- | --- |
+| before_gift_intro_id | The dialogue happen when you visit the shop at the first time and before you receive the fairy food. |
+| after_gift_intro_id | The dialogue happen when you visit the shop at the first time and after you receive the fairy food. |
+| low_fairy_food_dialogue_id | The dialogue happen when you visit the shop and your fairy food is running low. The quantity you can change in [config data](). |
+
+Make sure all the dialogue ID is exist in [dialogue data]().
 
 ### Location Background Image
 
@@ -58,22 +94,30 @@ In some scripts, you will see `location_background_id` but it is not found in th
 
 ### Create Data File After Modify ID in Script
 
-Unity cannot compile and run the newly modified script at runtime. Therefore you need to convert the data in the script to a data file. To do that, go to Unity menu bar, at the top of the program. Navigate to `Data Generator -> Panel -> General -> Camp`, then click the option.
-![Generate Camp Panel Data File]()
+Unity cannot compile and run the newly modified script at runtime. Therefore you need to convert the data in the script to a data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Panel -> General -> Camp`, then click the option.
+
+![Generate Camp Panel Data File](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Generate%20Camp%20Panel%20Data%20File.png)
+
 > [!TIP]
 > There are lots of panel there which can make you confuse. You can always refer the name at the associated script, at the attribute above the function name.
-![Panel Menu Bar Name]()
+![Panel Menu Bar Name](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Panel%20Menu%20Bar%20Name.png)
 
-2 files will be generated in `StreamingAssets/Data/Panel/` folder. You can refer the message in the Unity Console view.
-![Camp Panel Data File]()
+2 files will be generated in `Assets/StreamingAssets/Data/Panel/` folder. You can refer the message in the Unity Console view.
+
+![Camp Panel Data File](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/f0ef701f27d431647fd6547aea25674d5051ff68/Screenshot/Camp%20Panel%20Data%20File.png)
+
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.
 
 First is the json file (.json), readable text format. Open this file in any text editor. You can check if the data is correct. If data is wrong, you can repeat the above steps to generate a new one. The existing files will be replaced. This json file is just a reference, the game will not use it.
 
 The second file is data file (.data), in binary format. This is the file you need to put inside the mod folder.
+
 > [!NOTE]
 > Ignore the meta file (.meta). These files are only used by Unity.
+
+> [!NOTE]
+> Although Unity can read text file like json at runtime, parsing all the string values to other data values such as integer and float take time. This will increase the loading time when you launch the game. Furthermore, there are tons of data need to be parsed if you put more data in the file, which can increase the loading time to few minutes. But in binary format file, no parsing need to be done.
 
 ### Mod Data Folder Structure
 
@@ -157,5 +201,3 @@ Activity Panel
 | --- | --- |
 | PAN56_Wood Cabin Activity Panel | WoodCabinActivityPanelDataGenerator |
 | PAN57_Wood House Activity Panel | WoodHouseActivityPanelDataGenerator |
-
-

@@ -1,3 +1,5 @@
+[Before you begin](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data)
+
 ### Asset Image Category
 
 There are few categories of assets as listed below:
@@ -18,9 +20,10 @@ There are few categories of assets as listed below:
   - Effect
   - Rank (Level)
   - Hunt Result (At the hunting summary which the image with purple background)
+
 ![Hunt Result Message](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data/blob/e4d4e6bdb40e88ba4af63b93fb2f5580ff9758ab/Screenshot/Hunt%20Result%20Message.png)
 
-I will not include changing UI panel images in this manual but you can find the instruction in manual [here]().
+I will not include changing UI panel images in this manual but you can find the instruction in manual [here](MANUAL/Changing UI Panel Image and Data.md).
 
 ### Supported Image Format
 
@@ -31,10 +34,12 @@ Only support JPG and PNG image.
 Each image has its own image ID. The filename should be looked something like this: `WEA3A_WeaponName`.
 
 There are 2 sections in the filename. Each section is separated by underscore symbol `_`. The left section is the image ID which you need to follow. The right section is the image name which you can put whatever name for your reference.
+
 > [!WARNING]
 > If the underscore symbol `_` is not found in the filename, the whole filename will be treated as image ID.
 
 All the images ID reference can be found in this [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing).
+
 > [!NOTE]
 > All the ID in the Google Sheets are default. The image ID can be modified in the data file.
 
