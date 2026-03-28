@@ -25,7 +25,11 @@ You can find the instruction manual [here](https://github.com/nicmenteoh/Bubble-
 
 ### Changing Asset Data
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](/MANUAL/Changing Asset Data.md).
+
+### Changing Config Data
+
+You can find the instruction manual [here](/MANUAL/Changing Config Data.md).
 
 ### Changing Activity Data
 

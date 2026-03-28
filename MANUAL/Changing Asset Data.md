@@ -36,11 +36,11 @@ Copy all the data from any category in the Google Sheet to any excel program. I'
 
 After you have made the change, save the file to csv format (.csv). Use the pipe or vertical symbol `|` to separate the data between column. In LibreOffice Calc, after you save the file as csv, then put `|` symbol in `Field Delimiter` field.
 
-![Save as csv in LibreOffice Calc]()
+![Save as csv in LibreOffice Calc](/Screenshot/CSV Column Separator.png)
 
 The example fairy data in csv file should look something like this:
 
-![Fairy Data csv]()
+![Fairy Data csv](/Screenshot/Fairy Data CSV.png)
 
 The other category data in csv file are also look similar.
 
@@ -79,11 +79,11 @@ You can add your own data in new row. Make sure the dependency ID is also availa
 
 You need to convert the csv file to data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Data -> <The category data you want to generate>`, then click the option.
 
-![Generate Asset Data File]()
+![Generate Asset Data File](/Screenshot/Generate Asset Data File.png)
 
 2 files will be generated in `Assets/StreamingAssets/Data/Asset/` folder. You can refer the message in the Unity Console view.
 
-![Fairy Data File]()
+![Fairy Data File](/Screenshot/Fairy Data File.png)
 
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.
@@ -152,13 +152,13 @@ Save the file as csv (.csv) and rename the file to `Fairy Food Data`. Move the c
 | ID | string (text) | BAI001 | The unique ID for this bait asset. |
 | Name | - | - | For reference only. Not use in the game. |
 | Type | int (number) | 7 | Represent the [reward category](#reward-category). Do not channge. |
-| Sell Chance | int (number) | 0 to 100 | The higher the value, this bait will more likely available to purchase in food stall when refresh after certain amount of hunt set in food_stall_stock_refresh_after_hunt parameter in [config data](). |
+| Sell Chance | int (number) | 0 to 100 | The higher the value, this bait will more likely available to purchase in food stall when refresh after certain amount of hunt set in food_stall_stock_refresh_after_hunt parameter in [config data](/MANUAL/Changing Config Data.md). |
 | Cost | int (number) | 250 | The coin amount use to purchase this bait. |
 | Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this bait will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
 | Quantity | int (number) | 250 | The batch quantity produced by craft materials. |
 | Get At | string (text) | SM | The [shop](#shop-type) which this bait is available to purchase. Put the character together if this bait is available to purchase from multiple shops. Left empty if this bait is not available to purchase. |
 | Craft Material | array of string (text) and int (number) | MAT101=2&MAT31=1 | Materials and quantity use to craft this bait. Put the material ID, then add an equal sign `=`, then quantity of this material. Use and sign `&` to separate multiple material quantity. Make sure the material ID is exist in [material data](#changing-material-data). Whitespace ` ` is not allow. |
-| Unit Family Attractiveness Poll | array of string (text) and int (number) | FAM001=50&FAM002=99 | The higher the poll value, the higher chance the specific type of unit will appear during hunt. Put the Family ID, then add an equal sign `=`, then attractiveness poll. Use and sign `&` to separate multiple family polls. Make sure the Family ID is exist in [unit family language](). Whitespace ` ` is not allow. |
+| Unit Family Attractiveness Poll | array of string (text) and int (number) | FAM001=50&FAM002=99 | The higher the poll value, the higher chance the specific type of unit will appear during hunt. Refer to [unit family data](#changing-unit-family-data). Put the Family ID, then add an equal sign `=`, then attractiveness poll. Use and sign `&` to separate multiple family polls. Whitespace ` ` is not allow. |
 | Portrait | string (text) | BAI001A | This bait portrait image ID. You can put your own ID. |
 | Thumbnail | string (text) | BAI001B | This bait thumbnail image ID. You can put your own ID. |
 
@@ -272,7 +272,7 @@ Save the file as csv (.csv) and rename the file to `Accessory Data`. Move the cs
 | --- | --- | --- | --- |
 | ID | string (text) | UNI001 | The unique ID for this unit asset. |
 | Name | - | - | For reference only. Not use in the game. |
-| Family | string (text) | FAM001 | The unit type. Attract to certain [bait](#changing-bait-data). |
+| Family | string (text) | FAM001 | The unit type. Attract to certain [bait](#changing-bait-data). Refer to [unit family data](#changing-unit-family-data). |
 | Elemental | string (text) | ELFI | Use to compare with [weapon](#changing-weapon-data) elemental to gain bonus strength value or lose the value. Refer to [elemental data](#changing-elemental-data) to get the data which the elemental strong and weak against to other elemental. And make sure this ID is exist in the elemental data. |
 | Strength | int (number) | 5555 | The power of this unit. This unit will become hard to catch when the value is higher. |
 | Rage | int (number) | 1 to 5 | This unit is avaiable to catch when reach this rage value. The value is limit between 1 to 5. |
@@ -333,8 +333,8 @@ Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv f
 | Name | - | - | For reference only. Not use in the game. |
 | Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this location. This unit will be combine with unit in region data and activity data. Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
 | Reward Poll | array of string (text) and int (number) | MAT101=2&MAT31=1 | The loot drop when unit in this location caught successful. This poll value will be added with other assets which has this parameter. Put the asset ID, then add an equal sign `=`, then poll value of this asset. Use and sign `&` to separate multiple loot drop poll. Make sure the asset ID is exist in the [fairy food](#changing-fairy-food-data), [bait](#changing-bait-data), [flavour](#changing-flavour-data), [ammo](#changing-ammo-data), [crystal](#changing-crystal-data) and [material](#changing-material-data) data. Whitespace ` ` is not allow. |
-| Activity | string (text) | ACT001 | The activity held in this location. Refer to [activity data](). |
-| Intro | string (text) | INT001 | The dialogue happen when you move to this location at the first time. Make sure the dialogue ID is exist in [dialogue data](). |
+| Activity | string (text) | ACT001 | The activity held in this location. Refer to [activity data](/MANUAL/Changing Activity Data.md). |
+| Intro | string (text) | INT001 | The dialogue happen when you move to this location at the first time. Make sure the dialogue ID is exist in [dialogue data](/MANUAL/Changing Dialogue Data.md). |
 | Portrait | string (text) | UNI001A | This location portrait image ID. You can put your own ID. |
 | Thumbnail | string (text) | UNI001C | This location thumbnail image ID. You can put your own ID. |
 
@@ -349,7 +349,8 @@ Save the file as csv (.csv) and rename the file to `Location Data`. Move the csv
 | Against | array of string (text) and int (number) | ELFI=50&ELWT=150 | This element against to other elements. For example, you put 200 to fire element. When you equip weapon with this elemnt and encounter a fire element unit, your fairy and weaponn strength combine will be double. |
 
 The default data can be represented in this chart:
-![Elemental Chart](#Screenshot/Elemental Chart.png)
+
+![Elemental Chart](/Screenshot/Elemental Chart.png)
 
 Save the file as csv (.csv) and rename the file to `Elemental Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Elemental` and select it. Put the newly generated `Elemental.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
