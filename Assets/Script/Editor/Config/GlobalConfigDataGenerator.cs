@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using ZeroFormatter;
 
-public class GlobalConfigJsonGenerator
+public class GlobalConfigDataGenerator
 {
 
     [MenuItem ("Data Generator/Config/Generate Data (.data)")]

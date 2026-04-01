@@ -2,7 +2,7 @@
 
 ### WARNING
 
-If you plan to modify the existing data or add new data to the game, please always backup your save first. A lot of asset data have dependencies from other asset data. If you put the wrong type of data into the game, or remove the newly added data from the game without clearing all the dependencies, it may cause your game to crash.
+If you plan to modify the existing data or add new data to the game, please always backup your save first. A lot of asset data have dependencies from other asset data. If you put the wrong type of data into the game, or remove the newly added data from the game without clearing all the dependencies, it may cause your game to crash or not working properly.
 
 ### Unity Game Engine Require
 
@@ -102,7 +102,7 @@ The second file is data file (.data), in binary format. This is the file you nee
 
 In your game device, create a new folder and rename it to `Data` in the folder of any name you put. In the `Data` folder, add another folder and rename it to `Asset`. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Data/Asset/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Data/Asset/`. Copy the data file to the `Asset` folder.
 
-If you have change the ID in portrait, thumbnail and/or silhouette, make sure you also prepare the images and put the new ID in the image filename and put the image file in your game device mod folder. You can follow the instruction [here](MANUAL/Changing%20Asset%20Image.md).
+If you have change the ID in portrait, thumbnail and/or silhouette, make sure you also prepare the images and put the new ID in the image filename and put the image file in your game device mod folder. You can follow the instruction [here](/MANUAL/Changing%20Asset%20Image.md).
 
 After you do all the steps above, you can launch the game.
 
@@ -126,6 +126,8 @@ After you do all the steps above, you can launch the game.
 | Thumbnail | string (text) | FAI001C | This fairy thumbnail image ID. You can put your own ID. |
 | Silhouette | string (text) | FAI001B | This fairy silhouette image ID. You can put your own ID. |
 
+The awaken feature is not applicabke in demo version.
+
 Save the file as csv (.csv) and rename the file to `Fairy Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Fairy` and select it. Put the newly generated `Fairy.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
 ### Changing Fairy Food Data
@@ -135,7 +137,7 @@ Save the file as csv (.csv) and rename the file to `Fairy Data`. Move the csv fi
 | ID | string (text) | FFO001 | The unique ID for this fairy food asset. |
 | Name | - | - | For reference only. Not use in the game. |
 | Type | int (number) | 3 | Represent the [reward category](#reward-category). Do not channge. |
-| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this fairy food will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
+| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this fairy food will more likely appear in the free claim in warehouse if fairy food is chosen. |
 | Cost | int (number) | 250 | The coin amount use to purchase this fairy food. |
 | Quantity | int (number) | 250 | The batch quantity produced by craft materials. |
 | Get At | string (text) | SM | The [shop](#shop-type) which this fairy food is available to purchase. Put the character together if this fairy food is available to purchase from multiple shops. Left empty if this fairy food is not available to purchase. |
@@ -152,9 +154,9 @@ Save the file as csv (.csv) and rename the file to `Fairy Food Data`. Move the c
 | ID | string (text) | BAI001 | The unique ID for this bait asset. |
 | Name | - | - | For reference only. Not use in the game. |
 | Type | int (number) | 7 | Represent the [reward category](#reward-category). Do not channge. |
-| Sell Chance | int (number) | 0 to 100 | The higher the value, this bait will more likely available to purchase in food stall when refresh after certain amount of hunt set in food_stall_stock_refresh_after_hunt parameter in [config data](/MANUAL/Changing Config Data.md). |
+| Sell Chance | int (number) | 0 to 100 | The higher the value, this bait will more likely available to purchase in food stall when refresh after certain amount of hunt set in food_stall_stock_refresh_after_hunt parameter in [config data](/MANUAL/Changing%20Config%20Data.md). |
 | Cost | int (number) | 250 | The coin amount use to purchase this bait. |
-| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this bait will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
+| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this bait will more likely appear in the free claim in warehouse if bait is chosen. |
 | Quantity | int (number) | 250 | The batch quantity produced by craft materials. |
 | Get At | string (text) | SM | The [shop](#shop-type) which this bait is available to purchase. Put the character together if this bait is available to purchase from multiple shops. Left empty if this bait is not available to purchase. |
 | Craft Material | array of string (text) and int (number) | MAT101=2&MAT31=1 | Materials and quantity use to craft this bait. Put the material ID, then add an equal sign `=`, then quantity of this material. Use and sign `&` to separate multiple material quantity. Make sure the material ID is exist in [material data](#changing-material-data). Whitespace ` ` is not allow. |
@@ -174,7 +176,7 @@ Save the file as csv (.csv) and rename the file to `Bait Data`. Move the csv fil
 | Name | - | - | For reference only. Not use in the game. |
 | Type | int (number) | 8 | Represent the [reward category](#reward-category). Do not channge. |
 | Cost | - | - | Not in use. |
-| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this flavour will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
+| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this flavour will more likely appear in the free claim in warehouse if flavour is chosen. |
 | Quantity | - | - | Not in use. |
 | Get At | - | - | Not in use. |
 | Craft Material | - | - | Not in use. |
@@ -216,7 +218,7 @@ Save the file as csv (.csv) and rename the file to `Weapon Data`. Move the csv f
 | Lethal (%) | int (number) | 0 to 100 | The higher the value, the bugs will more likely die when caught. The value is limit between 0 to 100. |
 | Infinite | bool (true/false) | FALSE | If true, this ammo have unlimited quantity and will not appear in ammo dealer shop. |
 | Cost | int (number) | 250 | The coin amount use to purchase this ammo. |
-| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this ammo will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
+| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this ammo will more likely appear in the free claim in warehouse if ammo is chosen. |
 | Quantity | int (number) | 250 | The batch quantity produced by craft materials. |
 | Get At | string (text) | SM | The [shop](#shop-type) which this ammo is available to purchase. Put the character together if this ammo is available to purchase from multiple shops. Left empty if this ammo is not available to purchase. |
 | Craft Material | array of string (text) and int (number) | MAT101=2&MAT31=1 | Materials and quantity use to craft this ammo. Put the material ID, then add an equal sign `=`, then quantity of this material. Use and sign `&` to separate multiple material quantity. Make sure the material ID is exist in [material data](#changing-material-data). Whitespace ` ` is not allow. |
@@ -289,7 +291,7 @@ Save the file as csv (.csv) and rename the file to `Unit Data`. Move the csv fil
 
 ### Changing Unit Family Data
 
-There is no parameter for unit family, but it is use in [bait data](#changing-bait-data) and [unit data](#changing-unit-data). Make sure the new unit family ID you put in unit data exist in bait data. Else the unit will never appear. You can add new unit family by adding new image into your game device [mod folder](MANUAL/Changing Asset Image.md).
+There is no parameter for unit family, but it is use in [bait data](#changing-bait-data) and [unit data](#changing-unit-data). Make sure the new unit family ID you put in unit data exist in bait data. Else the unit will never appear. You can add new unit family by adding new image into your game device [mod folder](/MANUAL/Changing%20Asset%20Image.md).
 
 ### Changing Material Data
 
@@ -299,7 +301,7 @@ There is no parameter for unit family, but it is use in [bait data](#changing-ba
 | Name | - | - | For reference only. Not use in the game. |
 | Type | int (number) | 0 | Represent the [reward category](#reward-category). Only value 0, 1, 11, 12, 13, 14 are supported. |
 | Cost | int (number) | 10 | The coin amount use to purchase this material. |
-| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this material will more likely appear in the free claim in warehouse. This poll value will be added with other assets which has this parameter. |
+| Warehouse Free Claim Poll | int (number) | 101 | The higher the value, this material will more likely appear in the free claim in warehouse if material is chosen. |
 | Quantity | int (number) | 5 | The batch quantity produced by craft materials. |
 | Get At | string (text) | ML | The [shop](#shop-type) which this bait is available to purchase. Put the character together if this material is available to purchase from multiple shops. Left empty if this material is not available to purchase. |
 | Craft Material | array of string (text) and int (number) | MAT101=2&MAT31=1 | Materials and quantity use to craft this material. Put the material ID, then add an equal sign `=`, then quantity of this material. Use and sign `&` to separate multiple material quantity. Make sure the material ID is exist in this material data. Whitespace ` ` is not allow. |
@@ -421,5 +423,6 @@ Save the file as csv (.csv) and rename the file to `Rank Data`. Move the csv fil
 | 11 | Cold Rage | 0 | Success catching a bug will decrease rage. Failed to catch a bug will do nothing to rage. |
 | 12 | Reward Plus Even Catch Failed | 1 | Guarantee a fixed number of loot drop even the bug is failed to catch. |
 | 13 | Attractiveness Value | 1 | Add or deduct a fixed number to bait attractiveness. Attractiveness value is in between 0 to 100. |
+| 14 | Second Chance to Catch | 1 | If a bug is failed to catch, have a number of chance to catch that same bug again. |
 
 

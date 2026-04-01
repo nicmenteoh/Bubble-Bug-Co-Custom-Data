@@ -107,7 +107,6 @@
     <Compile Include="Assets\Script\Editor\Panel\General\LevelUpDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\ChangeTrapSetupDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\AccessoryMakerPurchasePanelDataGenerator.cs" />
-    <Compile Include="Assets\Script\Editor\Config\GlobalConfigJsonGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\GalleryCrystalPanelDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Data\MaterialDataDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\GalleryUnitStatisticPanelDataGenerator.cs" />
@@ -128,6 +127,7 @@
     <Compile Include="Assets\Script\Editor\Data\LocationDataDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\TransitionLoadingDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\SettingAudioPanelDataGenerator.cs" />
+    <Compile Include="Assets\Script\Editor\Config\GlobalConfigDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\FoodStallPanelDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Data\AmmoDataDataGenerator.cs" />
     <Compile Include="Assets\Script\Editor\Panel\General\FairyBakeryPurchasePanelDataGenerator.cs" />
