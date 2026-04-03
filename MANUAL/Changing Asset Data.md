@@ -1,14 +1,14 @@
 [Before you begin](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data)
 
-### WARNING
+## WARNING
 
 If you plan to modify the existing data or add new data to the game, please always backup your save first. A lot of asset data have dependencies from other asset data. If you put the wrong type of data into the game, or remove the newly added data from the game without clearing all the dependencies, it may cause your game to crash or not working properly.
 
-### Unity Game Engine Require
+## Unity Game Engine Require
 
 You need to [download my Unity project](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data) in order to generate the asset data file. Any Unity version will do.
 
-### Asset Data Category
+## Asset Data Category
 
 There are few categories of assets as listed below:
   - Fairy
@@ -30,7 +30,7 @@ There are few categories of assets as listed below:
 
 You need to refer to my raw data file in [Google Sheet](https://docs.google.com/spreadsheets/d/1jLESi-aXZg1jjIzYeyjZEV-_GvLN5VVQ9HN1Fmt_UM4/edit?usp=sharing) for the data you can change. In the Google Sheet, refer to the bottom for different data catrgory.
 
-### Create CSV File (.csv)
+## Create CSV File (.csv)
 
 Copy all the data from any category in the Google Sheet to any excel program. I'm using LibreOffice Calc. I'll explain what the parameter in each column does to the game in this manual below. You can delete the data in the row which you don't want to change. Make sure there is no blank row between 2 rows of data. And also make sure not to delete the parameter name at the first row.
 
@@ -68,14 +68,14 @@ Then copy the csv file to the `csv` folder which I have prepared in my [Github p
 > [!NOTE]
 > Unity will not read any user files outside `Assets` folder. Therefore you will never find the `csv` folder in Project view.
 
-### Add Your Own Data
+## Add Your Own Data
 
 You can add your own data in new row. Make sure the dependency ID is also available in that asset data. For example, you want to add a new fairy in fairy data. Make sure the ID you put in Fairy Food parameter is available in fairy food data.
 
 > [!IMPORTANT]
 > Do not use the ID start with the alphabet characters same with mine because it may crash with my ID at future update. It is also not recommended to have a long ID. 6 to 10 characters are suffice.
 
-### Create Data File from CSV File
+## Create Data File from CSV File
 
 You need to convert the csv file to data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Data -> <The category data you want to generate>`, then click that option.
 
@@ -98,7 +98,7 @@ The second file is data file (.data), in binary format. This is the file you nee
 > [!NOTE]
 > Although Unity can read text file like csv at runtime, parsing all the string values to other data values such as integer and float take time. This will increase the loading time when you launch the game. Furthermore, there are tons of data need to be parsed if you put more data in the file, which can increase the loading time to few minutes. But in binary format file, no parsing need to be done.
 
-### Mod Data Folder Structure
+## Mod Data Folder Structure
 
 In your game device, create a new folder and rename it to `Data` in the folder of any name you put. In the `Data` folder, add another folder and rename it to `Asset`. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Data/Asset/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Data/Asset/`. Copy the data file to the `Asset` folder.
 
@@ -106,7 +106,7 @@ If you have change the ID in portrait, thumbnail and/or silhouette, make sure yo
 
 After you do all the steps above, you can launch the game.
 
-### Changing Fairy Data
+## Changing Fairy Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -130,7 +130,7 @@ The awaken feature is not applicabke in demo version.
 
 Save the file as csv (.csv) and rename the file to `Fairy Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Fairy` and select it. Put the newly generated `Fairy.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Fairy Food Data
+## Changing Fairy Food Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -147,7 +147,7 @@ Save the file as csv (.csv) and rename the file to `Fairy Data`. Move the csv fi
 
 Save the file as csv (.csv) and rename the file to `Fairy Food Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Fairy Food` and select it. Put the newly generated `Fairy_Food.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Bait Data
+## Changing Bait Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -168,7 +168,7 @@ The other parameter in the foloowing column are just for reference.
 
 Save the file as csv (.csv) and rename the file to `Bait Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Bait` and select it. Put the newly generated `Bait.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Flavour Data
+## Changing Flavour Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -185,7 +185,7 @@ Save the file as csv (.csv) and rename the file to `Bait Data`. Move the csv fil
 
 Save the file as csv (.csv) and rename the file to `Flavour Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Flavour` and select it. Put the newly generated `Flavour.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Weapon Data
+## Changing Weapon Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -207,7 +207,7 @@ Save the file as csv (.csv) and rename the file to `Flavour Data`. Move the csv 
 
 Save the file as csv (.csv) and rename the file to `Weapon Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Weapon` and select it. Put the newly generated `Weapon.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Ammo Data
+## Changing Ammo Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -227,7 +227,7 @@ Save the file as csv (.csv) and rename the file to `Weapon Data`. Move the csv f
 
 Save the file as csv (.csv) and rename the file to `Ammo Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Ammo` and select it. Put the newly generated `Ammo.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Crystal Data
+## Changing Crystal Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -247,7 +247,7 @@ Save the file as csv (.csv) and rename the file to `Ammo Data`. Move the csv fil
 
 Save the file as csv (.csv) and rename the file to `Crystal Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Crystal` and select it. Put the newly generated `Crystal.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Accessory Data
+## Changing Accessory Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -268,7 +268,7 @@ Save the file as csv (.csv) and rename the file to `Crystal Data`. Move the csv 
 
 Save the file as csv (.csv) and rename the file to `Accessory Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Accessory` and select it. Put the newly generated `Accessory.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Unit Data
+## Changing Unit Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -289,11 +289,11 @@ Save the file as csv (.csv) and rename the file to `Accessory Data`. Move the cs
 
 Save the file as csv (.csv) and rename the file to `Unit Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Unit` and select it. Put the newly generated `Unit.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Unit Family Data
+## Changing Unit Family Data
 
 There is no parameter for unit family, but it is use in [bait data](#changing-bait-data) and [unit data](#changing-unit-data). Make sure the new unit family ID you put in unit data exist in bait data. Else the unit will never appear. You can add new unit family by adding new image into your game device [mod folder](/MANUAL/Changing%20Asset%20Image.md).
 
-### Changing Material Data
+## Changing Material Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -311,7 +311,7 @@ Save the file as csv (.csv) and rename the file to `Material Data`. Move the csv
 > [!IMPORTANT]
 > Do not change the first 2 material, `MAT1` and `MAT2` unless you know what you are doing.
 
-### Changing Region Data
+## Changing Region Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -319,7 +319,7 @@ Save the file as csv (.csv) and rename the file to `Material Data`. Move the csv
 | Name | - | - | For reference only. Not use in the game. |
 | Location | array of string (text) | LOC001,LOC002 | The location under this region. Use comma `,` to seperate multiple locations. Make sure this ID is exist in [location data](#changing-location-data). Whitespace ` ` is not allow. |
 | Fairy Appear ID | string (text) | FAI101 | The fairy which will appear as special reward during your hunt in this region. Make sure this ID is exist in [fairy data](#changing-fairy-data). |
-| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this region. This unit will be combine with unit in [location data](#changing-location-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
+| Unit | array of string (text) | UNI001,UNI002 | The common unit available to hunt in this region. This unit will be combine with unit in [location data](#changing-location-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
 | Reward Poll | array of string (text) and int (number) | MAT101=2&MAT31=1 | The loot drop when unit in this region caught successful. This poll value will be added with other assets which has this parameter. Put the asset ID, then add an equal sign `=`, then poll value of this asset. Use and sign `&` to separate multiple loot drop poll. Make sure the asset ID is exist in the [fairy food](#changing-fairy-food-data), [bait](#changing-bait-data), [flavour](#changing-flavour-data), [ammo](#changing-ammo-data), [crystal](#changing-crystal-data) and [material](#changing-material-data) data. Whitespace ` ` is not allow. |
 
 Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Region` and select it. Put the newly generated `Region.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
@@ -327,13 +327,13 @@ Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv f
 > [!TIP]
 > In the game, you can find the information about which locations are under which region in the `Menu -> Gallery -> Bug`. 
 
-### Changing Location Data
+## Changing Location Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
 | ID | string (text) | UNI001 | The unique ID for this location asset. |
 | Name | - | - | For reference only. Not use in the game. |
-| Unit | array of string (text) | UNI001,UNI002 | The unit appear to hunt in this location. This unit will be combine with unit in [region data](#changing-region-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
+| Unit | array of string (text) | UNI001,UNI002 | The common unit available to hunt in this location. This unit will be combine with unit in [region data](#changing-region-data) and [activity data](/MANUAL/Changing%20Activity%20Data.md). Use comma `,` to seperate multiple units. Make sure this ID is exist in [unit data](#changing-unit-data). Whitespace ` ` is not allow. |
 | Reward Poll | array of string (text) and int (number) | MAT101=2&MAT31=1 | The loot drop when unit in this location caught successful. This poll value will be added with other assets which has this parameter. Put the asset ID, then add an equal sign `=`, then poll value of this asset. Use and sign `&` to separate multiple loot drop poll. Make sure the asset ID is exist in the [fairy food](#changing-fairy-food-data), [bait](#changing-bait-data), [flavour](#changing-flavour-data), [ammo](#changing-ammo-data), [crystal](#changing-crystal-data) and [material](#changing-material-data) data. Whitespace ` ` is not allow. |
 | Activity | string (text) | ACT001 | The activity held in this location. Refer to [activity data](/MANUAL/Changing%20Activity%20Data.md). |
 | Intro | string (text) | INT001 | The dialogue happen when you move to this location at the first time. Make sure the dialogue ID is exist in [dialogue data](/MANUAL/Changing%20Dialogue%20Data.md). |
@@ -342,7 +342,7 @@ Save the file as csv (.csv) and rename the file to `Region Data`. Move the csv f
 
 Save the file as csv (.csv) and rename the file to `Location Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Location` and select it. Put the newly generated `Location.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Elemental Data
+## Changing Elemental Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -356,7 +356,7 @@ The default data can be represented in this chart:
 
 Save the file as csv (.csv) and rename the file to `Elemental Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Elemental` and select it. Put the newly generated `Elemental.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Effect Data
+## Changing Effect Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -369,7 +369,7 @@ The other parameter in the foloowing column are just for reference.
 
 Save the file as csv (.csv) and rename the file to `Effect Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Effect` and select it. Put the newly generated `Effect.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Changing Rank Data
+## Changing Rank Data
 
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
@@ -381,7 +381,7 @@ Save the file as csv (.csv) and rename the file to `Effect Data`. Move the csv f
 
 Save the file as csv (.csv) and rename the file to `Rank Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Rank` and select it. Put the newly generated `Rank.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
-### Reward Category
+## Reward Category
 | Type | Name |
 | --- | --- |
 | 0 | General material |
@@ -400,14 +400,14 @@ Save the file as csv (.csv) and rename the file to `Rank Data`. Move the csv fil
 | 13 | Resources |
 | 14 | Activity Item |
 
-### Shop Type
+## Shop Type
 | Type | Shop |
 | --- | --- |
 | L | Sell at Craftsman but item only available when location has unlocked |
 | M | Sell at Black Market |
 | S | Fairy Food sells at Fairy Bakery, Bait sells at Food Stall, Weapon sells at Smith, Ammo sells at Ammo Dealer, Crystal sells at Crystal Lab, Accessory sells at Accessory Maker, Material sells at Craftsman |
 
-### Effect Type
+## Effect Type
 | Type | Name | Parameter Quantity | Description |
 | --- | --- | --- | --- |
 | 1 | Strength Value | 1 | Add or deduct a fixed number to total strength. |

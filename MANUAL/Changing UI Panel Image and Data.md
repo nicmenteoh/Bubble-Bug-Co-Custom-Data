@@ -1,6 +1,6 @@
 [Before you begin](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data)
 
-### Get UI Panel Template
+## Get UI Panel Template
 
 There are many UI panels in the game. You can refer to my [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing) under UI sheet to get the image ID. Unless you know which image is assign to which UI panel, else you are recommended to [download my Unity project](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data) to search for the UI panel template. Any Unity version will do.
 > [!NOTE]
@@ -10,7 +10,7 @@ After you open the project in Unity, go to Project view and search for `Assets/P
 
 ![UI Panel Prefab](/Screenshot/Unity%20Project%20View%20Panel.png)
 
-### Look for Image ID
+## Look for Image ID
 
 I have opened the `PAN4_Camp Display Panel` prefab and it looks like this:
 
@@ -32,11 +32,11 @@ To know which image ID is associated with which image game object in the panel p
 
 ![Game Object Name](/Screenshot/Game%20Object%20Name%20and%20ID.png)
 
-### Supported Image Format
+## Supported Image Format
 
 Only support JPG and PNG image.
 
-### Image Filename Format
+## Image Filename Format
 
 The filename should be looked something like this: `WEA3A_WeaponName`.
 
@@ -45,11 +45,11 @@ There are 2 sections in the filename. Each section is separated by underscore sy
 > [!WARNING]
 > If the underscore symbol `_` is not found in the filename, the whole filename will be treated as image ID.
 
-### Mod Sprite Folder Structure
+## Mod Sprite Folder Structure
 
 In your game device, you need to add a new folder and rename it to `Sprite` in the folder of any name you put. In the `Sprite` folder, add another folder and rename it to `UI`. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Sprite/UI/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Sprite/UI/`. Then put all your UI image files inside the `UI` folder.
 
-### Modify the Data in Script File
+## Modify the Data in Script File
 
 Some images are shared with few panels. Therefore you will see same image ID appear in some scripts, especially the `background_id` and `midground_id`. If you don't want that image ID share with other panel, you can create your own image ID.
 
@@ -62,7 +62,7 @@ Changing the text colour is easier. You just need to find out the text game obje
 
 ![Text Colour](/Screenshot/Text%20Colour.png)
 
-### Additional Information
+## Additional Information
 
 In the game object in some prefab, the names have additional keyword in it. Refer to the table below:
 | Keyword | Sample | Description |
@@ -88,11 +88,11 @@ The following parameter only exist in `FairyBakeryPanelDataGenerator` script:
 
 Make sure all the dialogue ID is exist in [dialogue data](/MANUAL/Changing%20Dialogue%20Data.md).
 
-### Location Background Image
+## Location Background Image
 
 In some scripts, you will see `location_background_id` but it is not found in the panel prefab. This is the location image for the background of all the panels. This image is always overridden by each other in an image game object. Therefore it does not need to include in the panel. The default resolution for the location image is 1440 width x 2560 height. You can use any resolution for the image as long as its ratio is 9:16 to prevent image stretching and squeezing.
 
-### Create Data File After Modify ID in Script
+## Create Data File After Modify ID in Script
 
 Unity cannot compile and run the newly modified script at runtime. Therefore you need to convert the data in the script to a data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Panel -> General -> Camp`, then click the option.
 
@@ -119,13 +119,13 @@ The second file is data file (.data), in binary format. This is the file you nee
 > [!NOTE]
 > Although Unity can read text file like json at runtime, parsing all the string values to other data values such as integer and float take time. This will increase the loading time when you launch the game. Furthermore, there are tons of data need to be parsed if you put more data in the file, which can increase the loading time to few minutes. But in binary format file, no parsing need to be done.
 
-### Mod Data Folder Structure
+## Mod Data Folder Structure
 
 In your game device, create a new folder and rename it to `Data` in the folder of any name you put. In the `Data` folder, add another folder and rename it to `Panel`. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Data/Panel/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Data/Panel/`. Copy the data file to the `Panel` folder. In this example, the data file is `PAN4.data`.
 
 After you do all the steps above, you can launch the game.
 
-### Name and ID of Panel Prefab Associated to the Script
+## Name and ID of Panel Prefab Associated to the Script
 
 General Panel
 | Prefab Name | Script Name |
