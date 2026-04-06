@@ -19,11 +19,11 @@ The script is in C# programming language. If you familiar with Object Oriented P
 
 Unity cannot compile and run the newly modified script at runtime. Therefore you need to convert the data in the script to a data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Config -> Generate Data (.data)`, then click the option.
 
-![Generate Camp Panel Data File](/Screenshot/Generate%20Config%20Data%20File.png)
+![Generate Config Data File](/Screenshot/Generate%20Config%20Data%20File.png)
 
 2 files will be generated in `Assets/StreamingAssets/Data/Config/` folder. You can refer the message in the Unity Console view.
 
-![Camp Panel Data File](/Screenshot/Config%20Data%20File.png)
+![Config Data File](/Screenshot/Config%20Data%20File.png)
 
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.

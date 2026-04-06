@@ -1,6 +1,6 @@
 [Before you begin](https://github.com/nicmenteoh/Bubble-Bug-Co-Custom-Data)
 
-### Asset Image Category
+## Asset Image Category
 
 There are few categories of assets as listed below:
   - Fairy
@@ -25,11 +25,11 @@ There are few categories of assets as listed below:
 
 I will not include changing UI panel images in this manual but you can find the instruction in manual [here](MANUAL/Changing UI Panel Image and Data.md).
 
-### Supported Image Format
+## Supported Image Format
 
 Only support JPG and PNG image.
 
-### Image Filename Format
+## Image Filename Format
 
 Each image has its own image ID. The filename should be looked something like this: `WEA3A_WeaponName`.
 
@@ -43,7 +43,7 @@ All the images ID reference can be found in this [Google Sheets](https://docs.go
 > [!NOTE]
 > All the ID in the Google Sheets are default. The image ID can be modified in the data file.
 
-### Mod Sprite Folder Structure
+## Mod Sprite Folder Structure
 
 In your game device, you need to add a new folder and rename it to `Sprite` in the folder of any name you put. The folder path should look something like this `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Sprite/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Sprite/`.
 
@@ -70,7 +70,7 @@ To increase the loading time, I have separate the images into few categories as 
 
 Refer to the [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing), you will notice some categories have portrait and thumbnail column, some categories have silhouette column, and some categories have none. Portrait, thumbnail and silhouette have its own image ID. If none, it means the Code/Image ID column is used for portrait and thumbnail, and there will have no silhouette for these categories.
 
-### Example
+## Example
 
 If you want to change the unit image, you need to prepare 3 images: portrait, thumbnail and silhouette. Let say you want to change images for unit with code ID `UNI11`, you need to rename the portrait image to `UNI11A_YourImageName.png`, silhouette image to `UNI11B_YourImageName.png` and thumbnail image to `UNI11C_YourImageName.png`. Then copy these images into the folder `.../Android/data/com.roberteoh.bubblebugcodemo/files/Mods/YourFolderName/Sprite/Unit/` or `.../Android/data/com.roberteoh.bubblebugco/files/Mods/YourFolderName/Sprite/Unit/` in your game device.
 

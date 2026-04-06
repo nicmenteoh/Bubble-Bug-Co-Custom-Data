@@ -23,7 +23,7 @@ Unity cannot compile and run the newly modified script at runtime. Therefore you
 
 2 files will be generated in `Assets/StreamingAssets/Data/Config/` folder. You can refer the message in the Unity Console view.
 
-![Camp Panel Data File](/Screenshot/Activity%20Data%20File.png)
+![Activity Data File](/Screenshot/Activity%20Data%20File.png)
 
 > [!NOTE]
 > In case if you don't see the newly generated files, you can minimize the Unity program, then maximize it.
@@ -96,7 +96,7 @@ Parameter inside `UnitQuantity` class:
 Parameter inside `RepairHoleUnit` class:
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
-| unit | string (text) | "UNI005" | Catching this unit to reduce the hunt amount when repair a hole. Make sure the unit IDs are exist in [region data](/MANUAL/Changing%20Asset%20Data.md#changing-region-data)) or [location data](/MANUAL/Changing%20Asset%20Data.md#changing-location-data). |
+| unit | string (text) | "UNI005" | Catching this unit to reduce the hunt amount when repair a hole. Make sure the unit IDs are exist in [region data](/MANUAL/Changing%20Asset%20Data.md#changing-region-data) or [location data](/MANUAL/Changing%20Asset%20Data.md#changing-location-data). |
 | fill | int (number) | 2 | Hunt amount to reduce when repair a hole. |
 
 ## Changing Wood House Activity Data
@@ -128,13 +128,13 @@ Refer to `WoodHouseActivityDataGenerator` script:
 Parameter inside `UnitMudDig` class:
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
-| unit | string (text) | "UNI005" | Successful catching this unit wikk make the unit dig the mud in key hole. Make sure the unit IDs are exist in [region data](/MANUAL/Changing%20Asset%20Data.md#changing-region-data)) or [location data](/MANUAL/Changing%20Asset%20Data.md#changing-location-data). |
+| unit | string (text) | "UNI005" | Successful catching this unit wikk make the unit dig the mud in key hole. Make sure the unit IDs are exist in [region data](/MANUAL/Changing%20Asset%20Data.md#changing-region-data) or [location data](/MANUAL/Changing%20Asset%20Data.md#changing-location-data). |
 | dig | int (number | 8 | The amount of mud is dig in key hole. |
 
 Parameter inside `UnitRageQuantity` class:
 | Parameter | Data Type | Sample | Description |
 | --- | --- | --- | --- |
-| rage | int (number) | 1 to 5 | The party unit rage. |
+| rage | int (number) | 1 to 5 | The party unit rage. Value only support between 1 to 5. |
 | quantity | int (number) | 30 | The quantity of mix party unit in each rage. |
 
 Parameter inside `UnitSpeed` class:

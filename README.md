@@ -45,4 +45,4 @@ You can find the instruction manual [here]().
 
 ## Changing Dialogue Language and Data
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](/MANUAL/Changing%20Dialogue%20Data%20and%20Language.md).
