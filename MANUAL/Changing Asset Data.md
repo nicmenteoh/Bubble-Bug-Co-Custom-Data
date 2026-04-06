@@ -75,6 +75,10 @@ You can add your own data in new row. Make sure the dependency ID is also availa
 > [!IMPORTANT]
 > Do not use the ID start with the alphabet characters same with mine because it may crash with my ID at future update. It is also not recommended to have a long ID. 6 to 10 characters are suffice.
 
+You need to prepare the images for portrait, thumbnail and/or silhouette and put the new ID in the image filename, then put the image file in your game device mod folder. You can follow the instruction [here](/MANUAL/Changing%20Asset%20Image.md).
+
+You also need to add the new ID to the language file. You can follow the instruction [here](/MANUAL/Changing%20Asset%20Language.md).
+
 ## Create Data File from CSV File
 
 You need to convert the csv file to data file. To do that, go to Unity menu bar at the top of the program. Navigate to `Data Generator -> Data -> <The category data you want to generate>`, then click that option.

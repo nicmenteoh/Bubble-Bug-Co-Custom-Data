@@ -14,7 +14,7 @@ After you have made the change, save the file to csv format (.csv). Use the pipe
 
 ![Save as csv in LibreOffice Calc](/Screenshot/CSV%20Column%20Separator.png)
 
-The example Dialogue data in csv file should look something like this:
+The example dialogue data in csv file should look something like this:
 
 ![Dialogue Data csv](/Screenshot/Dialogue%20Data%20CSV.png)
 
@@ -84,4 +84,3 @@ Refer to image above, The 2 game objects you need to look for are `<character_ic
 After you satisfy the position of `<character_icon>` and `dialogue_background_id ASV` game objects, then you need to copy the value in `Pos X` and `Pos Y` to `Character Position` and `Dialogue Position` parameter column respectively. Use comma `,` to seperate the value of `Pos X` and `Pos Y`. Whitespace ` ` is not allow.
 
 For example, if the position of `<character_icon>` is -320 for `Pos X` and -410 for `Pos Y`, then you need to put `-320,-410` in `Character Position` parameter column.
-

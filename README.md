@@ -37,11 +37,11 @@ You can find the instruction manual [here](/MANUAL/Changing%20Activity%20Data.md
 
 ## Changing Asset Language
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](/MANUAL/Changing%20Asset%20Language.md).
 
 ## Changing UI Panel Language
 
-You can find the instruction manual [here]().
+You can find the instruction manual [here](/MANUAL/Changing%20UI%20Panel%20Language.md).
 
 ## Changing Dialogue Language and Data
 

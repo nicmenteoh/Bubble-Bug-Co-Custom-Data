@@ -36,7 +36,7 @@ Each image has its own image ID. The filename should be looked something like th
 There are 2 sections in the filename. Each section is separated by underscore symbol `_`. The left section is the image ID which you need to follow. The right section is the image name which you can put whatever name for your reference.
 
 > [!WARNING]
-> If the underscore symbol `_` is not found in the filename, the whole filename will be treated as image ID.
+> If the underscore symbol `_` is not found in the filename, the whole filename, including the file extension, will be treated as image ID, which can result your image not in use.
 
 All the images ID reference can be found in this [Google Sheets](https://docs.google.com/spreadsheets/d/1H0ssBZ87hrlcNWvUHXMg8Yd0KMeTFO7Gn6O1GhPXG4E/edit?usp=sharing).
 
