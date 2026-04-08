@@ -69,10 +69,10 @@ Refer to `WoodCabinActivityDataGenerator` script:
 | total_hunt_to_fill_hole | int (number) | 100 | Total amount of hunt to completely repair a hole after clear all the units in the hole. The amount can be reduced by adding value in `unit_to_boost_fill_hole` parameter. |
 | material_to_lure_unit | string (text) | "MAT011" | The material uses to lure out the units in hole after discover the hole. Make sure the material ID is exist in [material data](/MANUAL/Changing%20Asset%20Data.md#changing-material-data). |
 | material_to_repair_hole | string (text) | "MAT012" | The material uses to repair a hole after clearing all the units in the hole. Make sure the material ID is exist in [material data](/MANUAL/Changing%20Asset%20Data.md#changing-material-data). |
-| hole_discover_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when discover a hole. Make sure this message ID is exist in [hunt result message language](). |
-| next_unit_layer_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when new units in hole appear. Make sure this message ID is exist in [hunt result message language](). |
-| layer_unit_clear_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when all the units in the hole have cleared. Make sure this message ID is exist in [hunt result message language](). |
-| fully_repair_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when a hole is fully repaired. Make sure this message ID is exist in [hunt result message language](). |
+| hole_discover_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when discover a hole. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| next_unit_layer_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when new units in hole appear. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| layer_unit_clear_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when all the units in the hole have cleared. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| fully_repair_message_id | string (text) | "HRM004" | The message display in hunt summary panel and hunt history panel when a hole is fully repaired. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
 | unit_to_boost_fill_hole | array of `RepairHoleUnit` class | Refer to table below | Successful catching these units can reduce the hunt amount when repair a hole. |
 | in_hole_unit_group | array of `LayerUnit` class | Refer to table below | Unit groups in a hole. |
 | to_new_location | `NewLocation` class | Refer to [table](#changing-common-parameter-in-activity-data) above | Unlock to new location. Set to `null` if no new location to unlock. |
@@ -120,10 +120,10 @@ Refer to `WoodHouseActivityDataGenerator` script:
 | party_unit_rage_quantity | array of `UnitRageQuantity` class | Refer to table below | Total quantity of each rage of mix unit in party unit group. |
 | party_unit_group | array of `UnitSpeed` class | Refer to table below | The units in the party group with a precentage of `start_speed`. |
 | to_new_location | `NewLocation` class | Refer to [table](#changing-common-parameter-in-activity-data) above | Unlock to new location. Set to `null` if no new location to unlock. |
-| party_start_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when discover a party. Make sure this message ID is exist in [hunt result message language](). |
-| mud_clear_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when all the mud inside the key hole is cleared. Make sure this message ID is exist in [hunt result message language](). |
-| unit_runaway_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when a party unit has escape due to failed to catch. Make sure this message ID is exist in [hunt result message language](). |
-| storage_clear_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when there are no more party units in the storage room. Make sure this message ID is exist in [hunt result message language](). |
+| party_start_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when discover a party. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| mud_clear_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when all the mud inside the key hole is cleared. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| unit_runaway_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when a party unit has escape due to failed to catch. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
+| storage_clear_message_id | string (text) | "HRM009" | The message display in hunt summary panel and hunt history panel when there are no more party units in the storage room. Make sure this message ID is exist in [hunt result message language](/MANUAL/Changing%20Asset%20Language.md). |
 
 Parameter inside `UnitMudDig` class:
 | Parameter | Data Type | Sample | Description |

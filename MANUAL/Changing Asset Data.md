@@ -313,7 +313,7 @@ There is no parameter for unit family, but it is use in [bait data](#changing-ba
 Save the file as csv (.csv) and rename the file to `Material Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Material` and select it. Put the newly generated `Material.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
 > [!IMPORTANT]
-> Do not change the first 2 material, `MAT1` and `MAT2` unless you know what you are doing.
+> Do not change the first 2 material, `MAT1` and `MAT2`. These 2 materials are unique in the game.
 
 ## Changing Region Data
 

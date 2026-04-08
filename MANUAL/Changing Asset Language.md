@@ -29,7 +29,7 @@ There are few categories of assets language as listed below:
 
 ![Hunt Result Message](/Screenshot/Hunt%20Result%20Message.png)
 
-Copy all the data in the Google Sheet to any excel program, including the first row of parameter name. I'm using LibreOffice Calc. You can make the modification or translation to name under `Language` parameter column. Do not change the name in the `ID` parameter column.
+Copy all the data in the Google Sheet to any excel program, including the first row of parameter name. I'm using LibreOffice Calc. You can make the modification or translation to name under `Language` parameter column. You also can delete the data in the row which you don't want to change. Do not change the name in the `ID` parameter column.
 
 After you have made the change, save the file to csv format (.csv). Use the pipe or vertical symbol `|` to separate the Language between column. In LibreOffice Calc, after you save the file as csv, then put `|` symbol in `Field Delimiter` field.
 
