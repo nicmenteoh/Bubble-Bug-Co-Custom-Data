@@ -1,3 +1,6 @@
+Demo Release: https://play.google.com/store/apps/details?id=com.roberteoh.bubblebugcodemo
+Full Release: In Development
+
 ## Before You Begin
 
 1. The game offers you to modify the images, data and language in the game by adding files inside the specific folder in your game device. I will not responsible for any issues caused by these contents.
