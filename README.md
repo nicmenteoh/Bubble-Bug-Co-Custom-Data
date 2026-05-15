@@ -1,4 +1,4 @@
-Demo Release: https://play.google.com/store/apps/details?id=com.roberteoh.bubblebugcodemo
+Demo Release: https://play.google.com/store/apps/details?id=com.roberteoh.bubblebugcodemo  
 Full Release: In Development
 
 ## Before You Begin
@@ -17,6 +17,11 @@ You need to add a mod folder in your game device in order for the game to read t
 2. If you have launched the game before, you will see a `Save` folder inside. You can copy this folder for backup, or copy to other device to continue playing.
 3. Create a new folder and rename it to `Mods` in the `files` folder.
 4. For better organizing, you can create a new folder inside `Mods` folder and rename it to any name you want.
+
+## Developer Console
+To enable in-game developer console, go to `Setting Panel` and has few taps at the version text. Developer console allows you to manipulate the save progress data in the game at real time. However it cannot manipulates the asset data and config data. You need to do it externally by follow the instructions below.
+
+Tne commands to manipulate the save progress data are listed in the developer console. By typing a specific command, you can also view the inner working of the game, the calculations that generate all the results.
 
 ## Changing Asset Images
 

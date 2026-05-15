@@ -134,6 +134,9 @@ The awaken feature is not applicabke in demo version.
 
 Save the file as csv (.csv) and rename the file to `Fairy Data`. Move the csv file to csv folder. Then go to Unity menu bar and navigate to `Data Generator -> Data -> Fairy` and select it. Put the newly generated `Fairy.data` in `Assets/StreamingAssets/Data/Asset/` folder to your game device [mod folder](#mod-data-folder-structure).
 
+> [!IMPORTANT]
+> The fairy awakening should start from rarity 1 in order for the game to work and display properly.
+
 ## Changing Fairy Food Data
 
 | Parameter | Data Type | Sample | Description |
